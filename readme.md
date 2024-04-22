@@ -1,1 +1,3 @@
-### Python Bootcamp & Hackathon
+## Python Bootcamp & Hackathon
+
+Note: Clone this repo ``` testcode```
