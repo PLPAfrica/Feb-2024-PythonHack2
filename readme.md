@@ -16,3 +16,5 @@ By the end of the bootcamp/sessions, you will be required to submit a project.
 **Note:** Clone this repo, edit to the requirements/instructions assigned by the Instructor
 - Submit the code for review
 - Note that the Best project will be rewarded with a **certificate** and **some dollars** 😊
+
+  ## Note that the code will be updated everytime in class
