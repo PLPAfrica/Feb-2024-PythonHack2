@@ -1,6 +1,7 @@
 ## Python Bootcamp & Hackathon
 
-**Note:** Clone this repo ``` git clone https://github.com/PLPAfrica/Feb-2024-PythonHack2.git``` or simply click on ```Fork```
+**Note:** Clone this repo 
+``` python git clone https://github.com/PLPAfrica/Feb-2024-PythonHack2.git ``` or simply click on ```Fork```
 
 Objectives
 During this bootcamp and hackathon, we will create a Blog website and weather app using a Third-party API, we are aiming to:
