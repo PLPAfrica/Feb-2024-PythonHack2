@@ -1,4 +1,4 @@
-## Python Bootcamp & Hackathon
+# Python Bootcamp & Hackathon
 
 **Note:** Clone this repo 
 ``` git clone https://github.com/PLPAfrica/Feb-2024-PythonHack2.git ``` or simply click on ```Fork```
