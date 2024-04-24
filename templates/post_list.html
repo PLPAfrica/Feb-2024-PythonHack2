@@ -1,0 +1,44 @@
+{% extends '_base.html' %}
+{% block content %}
+<div class="flex flex-wrap justify-center">
+    {% for post in posts %}
+    <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4">
+        <a href="{% url 'post_detail' pk=post.pk %}">
+            <img class="rounded-t-lg" src="{{ post.image.url }}" alt="{{ post.title }}" />
+        </a>
+        <div class="p-5">
+            <div class="flex items-center gap-x-4 text-xs">
+                <time datetime="{{ post.publication_date }}" class="text-gray-500">{{ post.publication_date }}</time>
+                <div class="flex flex-wrap gap-x-2">
+                    {% for tag in post.tags.all %}
+                        <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ tag.name }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <a href="{% url 'post_detail' pk=post.pk %}">
+                <h5 class="mt-2 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ post.title }}</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ post.content|truncatechars:150 }}</p>
+            <div class="relative flex items-center gap-x-4">
+                <img src="{{ post.author.profile_picture.url }}" alt="{{ post.author.username }}" class="h-10 w-10 rounded-full bg-gray-50">
+                <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">
+                        <a href="#">
+                            <span class="absolute inset-0"></span>
+                            {{ post.author.username }}
+                        </a>
+                    </p>
+                    <p class="text-gray-600">{{ post.author.role }}</p>
+                </div>
+            </div>
+            <a href="{% url 'post_detail' pk=post.pk %}" class="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                </svg>
+            </a>
+        </div>
+    </article>
+    {% endfor %}
+</div>
+{% endblock %}

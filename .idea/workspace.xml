@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/blogcast.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0002_blogpost_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_images/01-BI_WEB3_STACKPOLE_HERO-1536x669.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_images/abstract.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_images/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_images/pexels-pixabay-262508.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogcast/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogcast/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogcast/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogcast/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogcast/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pictures/PicsArt_11-08-09.26.25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pictures/PicsArt_11-08-09.26.25_5aqJ3aV.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/migrations/0002_profile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/output.6ac031fc6970.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/output.d1406c1bf35d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/docs/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/src/input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/src/output.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.096f0c860e6d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.5b5db8e99596.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.5d6b7d4ee389.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.62644106c66c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.725d1bdf631a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.7a181f0fc9dd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.8131a81f6185.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.84ac7133b6ca.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.86d71a53088a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.8cea9220d23a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.9343118bfc8d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.a729c3d89aca.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.ca679745647c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.d63c7cd20cf0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.d711e90c54a9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.d9446b5b8b45.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.de20942a6271.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.dfe5c1a34d64.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.f9a1ae3f58dc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.fa5a6d2e1512.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.fc5fb1315aaf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.fdb970903d35.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/autocomplete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/changelists.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/dark_mode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/nav_sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/responsive_rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/css/widgets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/calendar-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/gis/move_vertex_off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/gis/move_vertex_on.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-addlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-changelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-deletelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-hidelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-no.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-unknown-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-unknown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-viewlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-yes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/inline-delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/selector-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/sorting-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/tooltag-add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/img/tooltag-arrowright.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/SelectBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/autocomplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/cancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/change_form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/filters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/inlines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/jquery.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/nav_sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/popup_response.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/prepopulate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/prepopulate_init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/urlify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/dsb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/hsb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/hy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/tk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/assets/css/tailwind.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/assets/img/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/assets/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/assets/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/assets/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/assets/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/css/footerStyles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/css/tailwind.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/backgrounds/changelist-results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/backgrounds/loading-small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/backgrounds/messagelist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/backgrounds/nav-grabber.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/backgrounds/ui-sortable-placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/add-another.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/add-another_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/add-link-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/add-link-small_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/autocomplete-multiple-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/autocomplete-single-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/back-link-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/back-link-rtl_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/back-link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/back-link_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/breadcrumbs-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/breadcrumbs-rtl_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/breadcrumbs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/breadcrumbs_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/change-link-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/change-link-small_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/date-hierarchy-back-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/date-hierarchy-back-rtl_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/date-hierarchy-back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/date-hierarchy-back_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/datepicker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/datepicker_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/datetime-now.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/datetime-now_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/delete-link-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/filter-choice-selected-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/form-select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-external-rtl-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-external-rtl-small_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-external-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-external-small_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-internal-rtl-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-internal-rtl-small_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-internal-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-internal-rtl_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-internal-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/link-internal-small_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/object-tools-add-link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/object-tools-viewsite-link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/pulldown-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/pulldown-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/pulldown-handler_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/related-lookup-m2m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/related-lookup-m2m_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/related-lookup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/related-lookup_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/related-remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/related-remove_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/searchbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/selector-add-m2m-horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/selector-add-m2m-horizontal_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/selector-add-m2m-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/selector-add-m2m-vertical_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/selector-filter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/selector-remove-m2m-horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/selector-remove-m2m-horizontal_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/selector-remove-m2m-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/selector-remove-m2m-vertical_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/sort-remove-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/sort-remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/sort-remove_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/sorted-ascending.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/sorted-descending.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/status-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/status-unknown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/status-yes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/th-ascending.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/th-descending.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/timepicker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/timepicker_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-add-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-add-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-arrow-down-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-arrow-down-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-arrow-up-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-arrow-up-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-close-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-close-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-delete-handler-predelete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-delete-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-delete-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-drag-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-drag-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-edit-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-edit-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-open-handler-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-open-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-add-handler-small-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-add-handler-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-add-handler-small_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-edit-handler-small-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-edit-handler-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-edit-handler-small_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-edit-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-remove-handler-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-remove-handler-small-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-remove-handler-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-remove-handler-small_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-remove-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-related-remove-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-remove-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-remove-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-trash-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-trash-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-trash-list-toggle-handler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-trash-list-toggle-handler_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-viewsite-link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/tools-viewsite-link_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/ui-datepicker-next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/ui-datepicker-next_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/ui-datepicker-prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/icons/ui-datepicker-prev_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/images/spritesheet-1694777276.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/img/admin/arrow-down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/img/admin/arrow-up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/LICENSE-JQUERY.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery-migrate-3.0.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery-migrate-3.0.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/grappelli.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/grappelli.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_autocomplete_fk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_autocomplete_generic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_autocomplete_m2m.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_collapsible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_collapsible_group.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_inline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_related_fk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_related_generic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_related_m2m.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_timepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/mueller/grid/output-rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/mueller/grid/output.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/mueller/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/partials/custom/tinymce.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/accessibility.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/css/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/css/word.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/custom_formats.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/full.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/lists/image_list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/lists/link_list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/lists/media_list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/lists/template_list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/media/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/media/logo_over.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/media/sample.avi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/media/sample.dcr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/media/sample.flv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/media/sample.mov" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/media/sample.ram" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/media/sample.rm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/media/sample.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/skins.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/templates/layout1.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/templates/snippet1.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/word.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/langs/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advhr/css/advhr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advhr/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advhr/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advhr/js/rule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advhr/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advhr/rule.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage/css/advimage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage/img/sample.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage/js/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage_orig/css/advimage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage_orig/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage_orig/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage_orig/image.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage_orig/img/sample.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage_orig/js/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advimage_orig/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink/css/advlink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink/js/advlink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink_orig/css/advlink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink_orig/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink_orig/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink_orig/js/advlink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink_orig/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlink_orig/link.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlist/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/advlist/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autolink/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autolink/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autoresize/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autoresize/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autosave/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autosave/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/bbcode/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/bbcode/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/contextmenu/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/contextmenu/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/directionality/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/directionality/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/emotions.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-cool.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-cry.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-embarassed.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-foot-in-mouth.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-frown.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-innocent.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-kiss.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-laughing.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-money-mouth.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-sealed.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-surprised.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-tongue-out.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-undecided.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-wink.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-yell.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/js/emotions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example/dialog.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example/img/example.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example/js/dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example/langs/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example_dependency/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example_dependency/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/fullpage/css/fullpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/fullpage/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/fullpage/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/fullpage/fullpage.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/fullpage/js/fullpage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/fullpage/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/fullscreen/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/fullscreen/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/fullscreen/fullscreen.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/img/show_advanced.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/img/visualchars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/iespell/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/iespell/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/button.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/confirm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/corners.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/vertical.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/template.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/insertdatetime/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/insertdatetime/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/layer/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/layer/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/legacyoutput/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/legacyoutput/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/lists/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/lists/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/css/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/js/embed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/js/media.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/media.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/moxieplayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/css/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/js/embed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/js/media.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/media.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/moxieplayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/nonbreaking/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/nonbreaking/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/noneditable/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/noneditable/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/pagebreak/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/pagebreak/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste/js/pastetext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste/js/pasteword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste/pastetext.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste/pasteword.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste_orig/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste_orig/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste_orig/js/pastetext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste_orig/js/pasteword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste_orig/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste_orig/pastetext.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/paste_orig/pasteword.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/preview/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/preview/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/preview/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/preview/jscripts/embed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/preview/preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/print/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/print/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/save/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/save/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace/css/searchreplace.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace/js/searchreplace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace/searchreplace.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace_orig/css/searchreplace.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace_orig/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace_orig/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace_orig/js/searchreplace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace_orig/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/searchreplace_orig/searchreplace.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/spellchecker/css/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/spellchecker/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/spellchecker/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/spellchecker/img/wline.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/css/props.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/js/props.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/props.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/tabfocus/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/tabfocus/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/cell.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/css/cell.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/css/row.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/css/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/js/cell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/js/merge_cells.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/js/row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/js/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/merge_cells.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/row.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/table.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template/blank.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template/css/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template/js/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template/template.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template_orig/blank.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template_orig/css/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template_orig/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template_orig/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template_orig/js/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template_orig/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/template_orig/template.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/visualblocks/css/visualblocks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/visualblocks/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/visualblocks/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/visualchars/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/visualchars/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/wordcount/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/wordcount/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/abbr.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/acronym.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/attributes.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/cite.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/css/attributes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/css/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/del.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/editor_plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/editor_plugin_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/ins.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/js/abbr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/js/acronym.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/js/attributes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/js/cite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/js/del.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/js/element_common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/js/ins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/about.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/anchor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/charmap.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/color_picker.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/editor_template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/editor_template_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/image.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/colorpicker.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/flash.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/iframe.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/pagebreak.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/quicktime.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/realmedia.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/shockwave.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/trans.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/video.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/img/windowsmedia.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/js/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/js/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/js/charmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/js/color_picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/js/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/js/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/js/source_editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/langs/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/langs/en_dlg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/shortcuts.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/img/buttons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/img/items.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/img/menu_arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/img/menu_check.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/img/progress.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/img/tabs.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_cs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_de.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_en.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_pl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_typography.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/customized.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/blockquote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/bold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/bullist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/charmap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/cleanup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/fullscreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/italic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/justifycenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/justifyfull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/justifyleft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/justifyright.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/media.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/numlist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/pasteword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/show_advanced.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_cell_props.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_col_after.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_col_before.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_delete_col.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_delete_row.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_merge_cells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_row_after.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_row_before.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_row_props.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/table_split_cells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/template.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/underline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/unlink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/buttons/visualchars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/customized/button_pagebreak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/customized/pagebreak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/icons/icon-fb_show-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/icons/icon-fb_show.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/icons/icon-mceResize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/img/menu/icon-mceOpen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/highcontrast/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/highcontrast/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/highcontrast/ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/img/button_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_silver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/ui_black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/ui_silver.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/source_editor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/simple/editor_template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/simple/editor_template_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/simple/img/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/simple/langs/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/simple/skins/default/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/simple/skins/default/ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/simple/skins/o2k7/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/simple/skins/o2k7/img/button_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/simple/skins/o2k7/ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/tiny_mce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/tiny_mce_popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/tiny_mce_src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/utils/editable_selects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/utils/form_utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/utils/mctabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/utils/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce_setup/tinymce_setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/js/footerBehavior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/src/output.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile_manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2fXStMsIirghyMxJEn5SByUOgh2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.blogcast.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "21.4.0",
+    "javascript.nodejs.core.library.typings.version": "20.12.7",
+    "last_opened_file_path": "G:/blogcast/staticfiles/assets/img",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\blogcast\staticfiles\assets\img" />
+      <recent name="G:\blogcast\static\docs\images" />
+      <recent name="G:\blogcast\staticfiles" />
+      <recent name="G:\blogcast" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\blogcast" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="blogcast" type="Python.DjangoServer" factoryName="Django server">
+      <module name="blogcast" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="blogcast.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-7a29c1521ef0-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.298" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="" />
+      <created>1713946143241</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713946143241</updated>
+      <workItem from="1713946145209" duration="13141000" />
+      <workItem from="1713960809216" duration="25040000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

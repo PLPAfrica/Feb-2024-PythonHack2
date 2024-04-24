@@ -1,0 +1,21 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<section class="relative pt-40 pb-24">
+    <!-- User Details Display -->
+    <div class="w-full max-w-7xl mx-auto px-6 md:px-8">
+        <!-- Display user's details -->
+        <!-- Use user_profile instead of user -->
+        <h3 class="font-manrope font-bold text-4xl text-gray-900 mb-1">{{ user_profile.user.get_full_name }}</h3>
+        <p class="font-normal text-base leading-7 text-gray-500">{{ user_profile.location }}</p>
+        <p class="font-normal text-base leading-7 text-gray-500">{{ user_profile.job_title }}</p>
+        <p class="font-normal text-base leading-7 text-gray-500">{{ user_profile.user.email }}</p>
+        <!-- Edit Profile Form -->
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="py-3.5 px-5 rounded-full bg-indigo-600 text-white font-semibold text-base leading-7 shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-100 hover:bg-indigo-700">Update Profile</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

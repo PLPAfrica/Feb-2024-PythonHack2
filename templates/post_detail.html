@@ -1,0 +1,43 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<div class="w-full px-5 py-24 mx-auto lg:px-32">
+    <div class="flex flex-col lg:flex-row lg:space-x-12">
+        <div class="order-last w-full max-w-screen-sm m-auto mt-12 lg:w-1/4 lg:order-first">
+            <div class="p-4 transition duration-500 ease-in-out transform bg-white border rounded-lg">
+                <div class="flex py-2 mb-4">
+                    <!-- Add user's profile picture here -->
+                    <img src="{{ post.author.profile_picture.url }}" class="w-16 h-16 rounded-full" alt="Profile Picture">
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-900">{{ post.author.get_full_name }}</p>
+                        <!-- Assuming 'get_full_name' is a method to get user's full name -->
+                        <p class="text-sm text-gray-500">{{ post.author.job_title }}</p>
+                        <!-- Add user's job title or any other relevant information here -->
+                    </div>
+                </div>
+                <div>
+                    <!-- Add button/link to follow user on Twitter or any other action -->
+                    <a href="#" class="flex items-center px-6 py-2 mt-auto text-lg text-white transition duration-500 ease-in-out transform bg-blue-600 border border-current rounded hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Follow us on Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full px-4 mt-12 prose lg:px-0 lg:w-3/4">
+            <div class="mb-5 border-b border-gray-200">
+                <div class="flex flex-wrap items-baseline -mt-2">
+                    <!-- Replace the date with the publication date of the post -->
+                    <h5>{{ post.publication_date }}</h5>
+                    <!-- Assuming 'publication_date' is the publication date of the post -->
+                    <p class="mt-1 ml-2">Tags:</p>
+                    <!-- Display tags associated with the post -->
+                    {% for tag in post.tags.all %}
+                        <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 leading-tight bg-gray-200 rounded-full mr-2">{{ tag.name }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- Display the title and content of the post -->
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.content }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
