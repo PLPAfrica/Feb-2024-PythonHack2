@@ -28,6 +28,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('', include('profiles.urls')),
     path('blog/', include('blog.urls')),
+    path('weather/', include('weather.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # Serve media files during development

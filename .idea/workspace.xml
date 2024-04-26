@@ -5,28 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="Work on blog posts">
-      <change afterPath="$PROJECT_DIR$/blog/migrations/0003_blogpost_author.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/migrations/0004_alter_blogpost_author.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/ICTISP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/ICTISP_2N7mkfI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/ICTISP_CPBFSLa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/ICTISP_Wel9lTn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/PLPAfrica_Hackathon.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/PLPAfrica_Hackathon_EqvaOFz.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles/migrations/0003_alter_profile_profile_picture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/post_flusher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/weather_data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/weather_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/weather_widget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogcast/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcast/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/license.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +33,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -76,7 +72,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "21.4.0",
     "javascript.nodejs.core.library.typings.version": "20.12.7",
-    "last_opened_file_path": "G:/blogcast/templates",
+    "last_opened_file_path": "G:/blogcast/weather",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -89,11 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\blogcast\weather" />
       <recent name="G:\blogcast\templates" />
       <recent name="G:\blogcast\staticfiles\assets\img" />
       <recent name="G:\blogcast\static\docs\images" />
       <recent name="G:\blogcast\staticfiles" />
-      <recent name="G:\blogcast" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\blogcast\media" />
@@ -146,7 +142,7 @@
       <workItem from="1713960809216" duration="26033000" />
       <workItem from="1713993701656" duration="4058000" />
       <workItem from="1714085266307" duration="4723000" />
-      <workItem from="1714112586134" duration="14987000" />
+      <workItem from="1714112586134" duration="17471000" />
     </task>
     <task id="LOCAL-00001" summary="Work on blog posts">
       <option name="closed" value="true" />
@@ -161,6 +157,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
