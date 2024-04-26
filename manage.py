@@ -8,7 +8,11 @@ import dotenv
 
 def main():
     """Run administrative tasks."""
+<<<<<<< HEAD
     dotenv.find_dotenv('.env')
+=======
+
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blogcast.settings')
     try:
         from django.core.management import execute_from_command_line

@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="Weather conditions my guy" />
+=======
+    <list default="true" id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="Work on blog posts">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/weather_data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/weather_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/weather_widget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogcast/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcast/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/views.py" afterDir="false" />
+    </list>
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,14 +37,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+<<<<<<< HEAD
         <option value="HTML File" />
         <option value="Python Script" />
+=======
+        <option value="Python Script" />
+        <option value="HTML File" />
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
     "state": "OPEN",
@@ -39,6 +65,8 @@
       </UrlAndAccount>
     </option>
   </component>
+=======
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -56,6 +84,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -81,6 +110,33 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.blogcast.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "21.4.0",
+    "javascript.nodejs.core.library.typings.version": "20.12.7",
+    "last_opened_file_path": "G:/blogcast/weather",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\blogcast\weather" />
@@ -141,7 +197,10 @@
       <workItem from="1713993701656" duration="4058000" />
       <workItem from="1714085266307" duration="4723000" />
       <workItem from="1714112586134" duration="17471000" />
+<<<<<<< HEAD
       <workItem from="1714130869822" duration="8863000" />
+=======
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
     </task>
     <task id="LOCAL-00001" summary="Work on blog posts">
       <option name="closed" value="true" />
@@ -174,7 +233,11 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Work on blog posts" />
+<<<<<<< HEAD
     <MESSAGE value="Weather conditions my guy" />
     <option name="LAST_COMMIT_MESSAGE" value="Weather conditions my guy" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="Work on blog posts" />
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
   </component>
 </project>

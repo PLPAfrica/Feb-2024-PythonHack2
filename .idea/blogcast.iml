@@ -19,7 +19,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="flowbite" level="application" />
+<<<<<<< HEAD
     <orderEntry type="library" name="tailwindcss" level="application" />
+=======
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

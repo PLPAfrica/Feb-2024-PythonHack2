@@ -8,7 +8,11 @@ import os
 logger = logging.getLogger(__name__)
 
 API_KEY = os.environ.get('WEATHER_API_KEY')  # Use environment variable for API key
+<<<<<<< HEAD
 API_BASE_URL = 'https://api.weatherapi.com/v1/current.json'
+=======
+API_BASE_URL = 'http://api.weatherapi.com/v1/current.json'
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
 
 
 def get_weather_data_for_location(location):
@@ -25,10 +29,14 @@ def get_weather_data_for_location(location):
                 weather_data = response.json()
                 temperature = weather_data['current']['temp_c']
                 conditions = weather_data['current']['condition']['text']
+<<<<<<< HEAD
                 icon = "https:" + conditions["current"]["condition"]["icon"]
                 condition_icon = icon
                 weather = WeatherData(location=location, temperature=temperature,
                                       conditions=conditions, condition_icon=condition_icon)
+=======
+                weather = WeatherData(location=location, temperature=temperature, conditions=conditions)
+>>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
                 weather.save()
                 logger.info(f"Saved new weather data for location: {location}")
                 return weather
