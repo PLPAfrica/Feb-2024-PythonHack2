@@ -9,6 +9,8 @@ def home(request):
     
     return render(request, 'index.html', {'random_dog_image': random_dog_image})
 
+    # generating facts
+
 def get_random_dog_fact(request):
     response = requests.get('https://api.dog-facts-api.dog/facts/random')
     data = response.json()
