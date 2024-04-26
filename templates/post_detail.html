@@ -1,0 +1,86 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<div class="w-auto px-5 py-24 mx-auto max-w-7xl">
+<main>
+  <article>
+    <header class="mx-auto mt-20 max-w-screen-lg rounded-t-lg bg-white pt-16 text-center shadow-lg">
+      <p class="text-gray-500">Published {{ post.publication_date }}</p>
+      <h1 class="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">{{ post.title }}</h1>
+      <p class="mt-6 text-lg text-gray-700">{{ post.author.user.get_full_name }}</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-2">
+                {% for tag in post.tags.all %}
+                    <a class="text-gray-900 bg-gray-100 badge hover:bg-gray-200" href="#">{{ tag.name }}</a>
+                {% endfor %}      </div>
+      <img class="-z-10 absolute top-0 left-0 mt-10 h-96 w-full object-cover" src="https://images.unsplash.com/photo-1504672281656-e4981d70414b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+    </header>
+
+    <div class="mx-auto max-w-screen-lg space-y-12 rounded-b-lg bg-white px-8 pt-10 pb-20 font-serif text-lg tracking-wide text-gray-700 sm:shadow-lg">
+      <p>{{ post.content }}</p>
+        <wbr>
+        <br class="divide-fuchsia-950 w-full h-2.5 ">
+        
+    </div>
+  </article>
+</main>
+
+<div class="w-fit mx-auto mt-10 flex space-x-2">
+  <div class="h-0.5 w-2 bg-primary-600"></div>
+  <div class="h-0.5 w-32 bg-primary-600"></div>
+  <div class="h-0.5 w-2 bg-primary-600"></div>
+</div>
+
+<aside aria-label="Recent Posts" class="mx-auto mt-10 max-w-screen-xl py-20">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <!-- Heading -->
+    <div class="mb-10 md:mb-16">
+      <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Most Recent Posts</h2>
+      <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Get more awesome reads below.</p>
+    </div>
+      <div class="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
+                <!-- Article -->
+      
+    <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4">
+        <a href="{% url 'post_detail' pk=post.pk %}">
+            <img class="rounded-t-lg" src="{{ post.image.url }}" alt="{{ post.title }}" />
+        </a>
+        <div class="p-5">
+            <div class="flex items-center gap-x-4 text-xs">
+                <time datetime="{{ post.publication_date }}" class="text-gray-500">{{ post.publication_date }}</time>
+                <div class="flex flex-wrap gap-x-2">
+                    {% for tag in post.tags.all %}
+                        <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ tag.name }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <a href="{% url 'post_detail' pk=post.pk %}">
+                <h5 class="mt-2 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ post.title }}</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ post.content|truncatechars:150 }}</p>
+            <div class="relative flex items-center gap-x-4">
+                <img src="{{ post.author.profile_picture.url }}" alt="{{ post.author.username }}" class="h-10 w-10 rounded-full bg-gray-50">
+                <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">
+                        <a href="#">
+                            <span class="absolute inset-0"></span>
+                            {{ post.author.user.get_full_name }}
+                        </a>
+                    </p>
+                    <p class="text-gray-600">{{ post.author.user.profile.location }}</p>
+                </div>
+            </div>
+            <a href="{% url 'post_detail' pk=post.pk %}" class="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                </svg>
+            </a>
+        </div>
+    </article>
+      
+      </div>
+  </div>
+</aside>
+
+</div>
+{% endblock %}
