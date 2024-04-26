@@ -1,0 +1,104 @@
+{% load static %}
+
+<DOCTYPE html>
+
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device=width, initial-scale=1">
+    <meta="description" content="the best Experience">
+    <meta name="author" content="Yusufu, yose">
+    
+    {% block 'title'%}
+
+    <title>Central News</title>
+
+    {% endblock%}
+
+    <!--Boostarp link-->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Link Custom CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+    {% block 'header' %}
+
+    <header class=" p-4  text-white w-100 nav-masthead">
+        
+        <div class="container" >
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="{% url 'home'%}" 
+                    class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+                    <img class="bi me-2" width="70" height="70" src="{% static  'images/logo.png' %}" 
+                        arial-label="Bootstrap"/>
+
+            </div>
+
+        </div>
+    </header>
+    {% endblock%}
+    {% block 'body' %}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                {% for i in articles %}
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ i.urlToImage }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title:{{ i.title }}</h5>
+                      <p class="card-text">{{ i.description }}</p>
+                      <a href="{{ i.url }}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="col-md-6">
+                Category
+            </div>
+        </div>
+    </div>
+ 
+
+        <img src="{{ i.urlToImage }}" height="200px" width="200px" alt=" "/>
+
+        <p>{{ i.author }}</p>
+        <p>{{ i.title }}</p>
+        <p>{{ i.description }}</p>
+
+        <a href= "{{ i.url }}" target="blank"> Read More</a>
+        <small> Published at: {{ i.publishedAt}}</small>
+
+
+    
+    {% endblock  %}
+    
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+
+
+    {% block 'footer' %}
+    <footer class="footer text-muted white-50  bg-dark py-5">
+        <div class="container">
+            <p class= "float-end mb-1 ">Powered by <a href="https://www.djangoproject.com" >News blogs</a></p>
+            <p class= " mb-1 ">
+                NewsCaster 
+            </p>
+            <p class="mb-0"> © Copyright  {% now 'Y' %} <a href="">NEWS CASTA</a>
+            </p>
+    
+        </div>    
+    </footer>
+    {% endblock %}
+
+</html>
