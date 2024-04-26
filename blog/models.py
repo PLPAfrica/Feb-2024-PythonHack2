@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User  # Import the User model
 from django.utils import timezone
+from profiles.models import Profile
 
 
 class Tag(models.Model):
@@ -16,7 +17,13 @@ class BlogPost(models.Model):
     image = models.ImageField(upload_to='blog_images/', blank=True, null=True)
     publication_date = models.DateTimeField(default=timezone.now)
     tags = models.ManyToManyField(Tag, related_name='blog_posts')
-    author = models.ForeignKey(User, default=1, on_delete=models.CASCADE)  # Add the author field
+    author = models.ForeignKey(Profile, default=1, on_delete=models.CASCADE)  # Add the author field
+
+    def profile_picture(self):
+        return self.author.profile_picture
+
+    def full_name(self):
+        return self.author.user_id
 
     def __str__(self):
         return self.title

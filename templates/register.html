@@ -1,6 +1,5 @@
 {% extends '_base.html' %}
 {% block content %}
-
 <section class="bg-gray-50 dark:bg-gray-900">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
@@ -18,7 +17,14 @@
               <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Create an account
               </h1>
-              <form class="space-y-4 md:space-y-6" method="post" action="{% url 'register' %}">
+              {% if messages %}
+                  <div class="mb-4">
+                      {% for message in messages %}
+                          <div class="text-red-500">{{ message }}</div>
+                      {% endfor %}
+                  </div>
+              {% endif %}
+              <form class="space-y-4 md:space-y-6" method="post" action="{% url 'register' %}" enctype="multipart/form-data">
                   {% csrf_token %}
                   <div>
                       <label for="id_username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
@@ -35,6 +41,18 @@
                   <div>
                       <label for="id_password2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm password</label>
                       <input type="password" name="password2" id="id_password2" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                  </div>
+                  <div>
+                      <label for="id_skills" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Skills</label>
+                      <input type="text" name="skills" id="id_skills" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                  </div>
+                  <div>
+                      <label for="id_job_title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Job Title</label>
+                      <input type="text" name="job_title" id="id_job_title" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                  </div>
+                  <div>
+                      <label for="id_location" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Location</label>
+                      <input type="text" name="location" id="id_location" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
                   </div>
                   <div class="flex items-start">
                       <div class="flex items-center h-5">
@@ -53,5 +71,4 @@
       </div>
   </div>
 </section>
-
 {% endblock %}

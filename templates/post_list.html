@@ -25,10 +25,10 @@
                     <p class="font-semibold text-gray-900">
                         <a href="#">
                             <span class="absolute inset-0"></span>
-                            {{ post.author.username }}
+                            {{ post.author.user.get_full_name}}
                         </a>
                     </p>
-                    <p class="text-gray-600">{{ post.author.role }}</p>
+                    <p class="text-gray-600">{{ post.author.user.profile.location }}</p>
                 </div>
             </div>
             <a href="{% url 'post_detail' pk=post.pk %}" class="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

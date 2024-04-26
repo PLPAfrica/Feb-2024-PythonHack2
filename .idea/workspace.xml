@@ -4,31 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/abstract.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/images.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/simlexx-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd6f6b3b-5cb3-49c7-964d-449bdddf636e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd6f6b3b-5cb3-49c7-964d-449bdddf636e.xml" afterDir="false" />
+    <list default="true" id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="Work on blog posts">
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0003_blogpost_author.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0004_alter_blogpost_author.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pictures/ICTISP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pictures/ICTISP_2N7mkfI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pictures/ICTISP_CPBFSLa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pictures/ICTISP_Wel9lTn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pictures/PLPAfrica_Hackathon.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pictures/PLPAfrica_Hackathon_EqvaOFz.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles/migrations/0003_alter_profile_profile_picture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_flusher.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_images/01-BI_WEB3_STACKPOLE_HERO-1536x669.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/blog_images/01-BI_WEB3_STACKPOLE_HERO-1536x669.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_images/abstract.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/blog_images/abstract.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_images/images.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/blog_images/images.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_images/pexels-pixabay-262508.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/blog_images/pexels-pixabay-262508.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogcast/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcast/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogcast/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcast/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/license.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/post_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile_manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,33 +62,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django Server.blogcast.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;21.4.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.7&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/blogcast/staticfiles/assets/img&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.blogcast.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "21.4.0",
+    "javascript.nodejs.core.library.typings.version": "20.12.7",
+    "last_opened_file_path": "G:/blogcast/templates",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\blogcast\templates" />
       <recent name="G:\blogcast\staticfiles\assets\img" />
       <recent name="G:\blogcast\static\docs\images" />
       <recent name="G:\blogcast\staticfiles" />
@@ -146,8 +145,18 @@
       <workItem from="1713946145209" duration="13141000" />
       <workItem from="1713960809216" duration="26033000" />
       <workItem from="1713993701656" duration="4058000" />
-      <workItem from="1714085266307" duration="4353000" />
+      <workItem from="1714085266307" duration="4723000" />
+      <workItem from="1714112586134" duration="14987000" />
     </task>
+    <task id="LOCAL-00001" summary="Work on blog posts">
+      <option name="closed" value="true" />
+      <created>1714089964697</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714089964697</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,5 +175,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Work on blog posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on blog posts" />
   </component>
 </project>

@@ -21,15 +21,15 @@
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 overflow-hidden">{{ post.content }}</p>
         <div class="mt-auto flex items-center gap-x-4">
-            <img src="{{ post.author.profile_picture.url }}" alt="{{ post.author.username }}" class="h-10 w-10 rounded-full bg-gray-50">
+            <img src="{{ post.author.profile_picture.url }}" alt="{{ post.author.full_name }}" class="h-10 w-10 rounded-full bg-gray-50">
             <div class="text-sm leading-6">
-                <p class="font-semibold text-gray-900">
+                <p class="font-semibold text-black">
                     <a href="#">
                         <span class="absolute inset-0"></span>
-                        {{ post.author.username }}
+                        {{ post.author.full_name }}
                     </a>
                 </p>
-                <p class="text-gray-600">{{ post.author.role }}</p>
+                <p class="text-black">{{ post.author.user_id }}</p>
             </div>
         </div>
     </div>

@@ -25,7 +25,7 @@ class Profile(models.Model):
     skills = models.CharField(max_length=100)
     job_title = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
-    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True)
+    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)
 
     def __str__(self):
         return self.user.username
