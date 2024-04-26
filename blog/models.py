@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User  # Import the User model
 from django.utils import timezone
 from profiles.models import Profile
+from tinymce.models import HTMLField
 
 
 class Tag(models.Model):
@@ -13,7 +14,7 @@ class Tag(models.Model):
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=200)
-    content = models.TextField()
+    content = HTMLField()
     image = models.ImageField(upload_to='blog_images/', blank=True, null=True)
     publication_date = models.DateTimeField(default=timezone.now)
     tags = models.ManyToManyField(Tag, related_name='blog_posts')

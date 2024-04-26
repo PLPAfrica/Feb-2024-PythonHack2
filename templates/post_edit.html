@@ -1,44 +1,59 @@
 {% extends '_base.html' %}
 {% load crispy_forms_filters %}
-
 {% load crispy_forms_tags %}
 
 {% block content %}
+    <head>
+        <script src="https://cdn.tiny.cloud/1/9ebdb096l71bu7lkmyz7o6j7hoym95nn792zzrjifizqshhs/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <title>Create Blog Post</title>
+    </head>
+    <script>
+        tinymce.init({
+            selector: '#content',
+            setup: function (editor) {
+                editor.on('change', function () {
+                    editor.save();
+                });
+            }
+        });
+    </script>
 
-   <section class="bg-white dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
-      <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">{% if post.id %}Edit Post{% else %}New Post{% endif %}</h2>
-      <form method="POST" enctype="multipart/form-data">
-          {% csrf_token %}
-          <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
-              <div class="sm:col-span-2">
-                  <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
-                  <input type="text" name="title" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter post title" required="">
-              </div>
-              <div class="sm:col-span-2">
-                  <label for="content" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Content</label>
-                  <textarea id="content" name="content" rows="8" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter post content"></textarea>
-              </div>
-              <div class="sm:col-span-2">
-                  <label for="image" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Image</label>
-                  <input type="file" name="image" id="image" accept="image/*" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-              </div>
-              <div class="sm:col-span-2">
-                  <label for="tags" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tags</label>
-                  <select id="tags" name="tags" multiple class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                      {% for tag in tags %}
-                          <option value="{{ tag.id }}">{{ tag.name }}</option>
-                      {% endfor %}
-                  </select>
-              </div>
-          </div>
-          <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-600 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
-              {% if post.id %}Update{% else %}Create{% endif %}
-          </button>
-      </form>
-  </div>
-</section>
-
-
-    
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+            <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">New Post</h2>
+            <form method="POST" enctype="multipart/form-data">
+                {% if messages %}
+                    <div class="mb-4 text-red-600 sm:justify-center">
+                        {% for message in messages %}
+                            <div class="text-red-600">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% csrf_token %}
+                <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                    <div class="sm:col-span-2">
+                        <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
+                        <input type="text" name="title" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter post title" required="">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="content" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Content</label>
+                        <textarea id="content" name="content" rows="8" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter post content"></textarea>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="image" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Image</label>
+                        <input type="file" name="image" id="image" accept="image/*" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="tags" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tags</label>
+                        <select id="tags" name="tags" multiple class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            {% for tag in tags %}
+                                <option value="{{ tag.id }}">{{ tag.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-600 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">Create</button>
+            </form>
+        </div>
+    </section>
 {% endblock %}

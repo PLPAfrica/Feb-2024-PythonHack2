@@ -1,3 +1,5 @@
+import profile
+
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth import logout  # Import authenticate as well
@@ -52,7 +54,7 @@ def user_login(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                messages.success(request, f'Welcome back, {username}!')
+                messages.success(request, f'Welcome back, {user.username}!')
                 return redirect('index')  # Change 'home' to your desired URL name
         # Authentication failed, display error message
         messages.error(request, 'Invalid username or password. Please try again.')
@@ -82,3 +84,7 @@ def profile_manager(request):
         'form': form,
     }
     return render(request, 'profile_manager.html', context)
+
+
+def forgot_password(request):
+    return render(request, 'forgot_password.html')

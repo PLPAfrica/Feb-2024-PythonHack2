@@ -7,6 +7,28 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+.dropdown-menu-enter {
+  transition: opacity 100ms ease-out, transform 100ms ease-out;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.dropdown-menu-enter-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.dropdown-menu-exit {
+  transition: opacity 75ms ease-in, transform 75ms ease-in;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.dropdown-menu-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
 *,
 ::before,
 ::after {
@@ -436,7 +458,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 img,
 video {
-  max-width: 100%;
+  max-width:inherit;
+  width: auto;
   height: auto;
 }
 

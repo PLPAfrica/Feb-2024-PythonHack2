@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     # 'blog',
     'crispy_forms',
     'crispy_bootstrap4',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -153,4 +154,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+TINYMCE_JS_URL = 'https://cdn.tiny.cloud/1/9ebdb096l71bu7lkmyz7o6j7hoym95nn792zzrjifizqshhs/tinymce/7/tinymce.min.js'
+TINYMCE_COMPRESSOR = False
 

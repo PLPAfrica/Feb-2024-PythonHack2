@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.7",
-    "flowbite": "^2.3.0"
+    "flowbite": "^2.3.0",
+    "flowbite-typography": "^1.0.3"
   }
 }

@@ -1,15 +1,12 @@
 from django import forms
-from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
 from .models import BlogPost, Comment
-import logging
-
-logger = logging.getLogger(__name__)
 
 
 class BlogPostForm(forms.ModelForm):
     class Meta:
         model = BlogPost
+        content = forms.CharField(widget=forms.HiddenInput())
         fields = ('title', 'content', 'image', 'tags')
 
     def save(self, commit=True):
@@ -20,7 +17,7 @@ class BlogPostForm(forms.ModelForm):
                 self.save_m2m()
             return blog_post
         except Exception as e:
-            logger.error("Error saving blog post form: %s\n%s", e, e.__traceback__)
+            messages.error("An error occurred while saving the blog post form: {}".format(str(e)))
             raise e
 
 
@@ -36,5 +33,5 @@ class CommentForm(forms.ModelForm):
                 comment.save()
             return comment
         except Exception as e:
-            logger.error("Error saving comment form: %s\n%s", e, e.__traceback__)
+            messages.error("An error occurred while saving the comment form: {}".format(str(e)))
             raise e
