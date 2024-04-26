@@ -25,63 +25,69 @@
     
 </head>
 
+{% block 'header' %}
+<header class="p-4 text-white w-100 nav-masthead">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
+            <div class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+                <img class="bi me-2" width="70" height="70" src="{% static 'images/logo.png' %}" aria-label="Bootstrap"/>
+            </div>
+            <form action="" method="get" class="mb-3 mb-lg-0">
+                <div class="input-group">
+                    <input type="text" class="form-control me-2" name="country" placeholder="Search By Country">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+{% endblock %}
+
 <body>
 
-    {% block 'header' %}
 
-    <header class=" p-4  text-white w-100 nav-masthead">
-        
-        <div class="container" >
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="{% url 'home'%}" 
-                    class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
-                    <img class="bi me-2" width="70" height="70" src="{% static  'images/logo.png' %}" 
-                        arial-label="Bootstrap"/>
-
-            </div>
-
-        </div>
-    </header>
-    {% endblock%}
     {% block 'body' %}
-
-
-    <div class="container">
+    
+        
+    <div class="container align-center">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true" 
+                        href="{% url 'home' %}?category=general">GENERAL</li>
+                    <li class="list-group-item"  href="{% url 'home' %}?category=technology" >TECHNOLOGY</li>
+                    <li class="list-group-item"  href="{% url 'home' %}?category=health">HEALTH</li>
+                    <li class="list-group-item" href="{% url 'home' %}?category=sports">SPORTS</li>
+                    <li class="list-group-item" href="{% url 'home' %}?category=science">SCIENCE</li>
+                    <li class="list-group-item" href="{% url 'home' %}?category=business">BUSINESS</li>
+                    <li class="list-group-item" href="{% url 'home' %}?category=entertainment">ENTERTAINMENT</li>
+                  </ul>
+            </div>
+            <div class="col-md-3">
 
                 {% for i in articles %}
-                <div class="card" style="width: 18rem;">
+                <div class="card rounded shadow-lg-2 " style="width: 30rem;">
                     <img src="{{ i.urlToImage }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title:{{ i.title }}</h5>
+                        <p class="card-text">{{ i.author }}</p>
+                      <h5 class="card-title">{{ i.title }}</h5>
+
+                      <p class="card-title">{{ i.source.name }}</p>
                       <p class="card-text">{{ i.description }}</p>
-                      <a href="{{ i.url }}" class="btn btn-primary">Read More</a>
+
+                      <small>{{ i.publishedAt}}</small>
+                      <a href="{{ i.url }}" class="btn btn-primary m-2" target="blank">Read More</a>
                     </div>
                 </div>
                 {% endfor %}
             </div>
+            <p class="col-md-4">Enjoy our captivating News</p>
             
-            <div class="col-md-6">
-                Category
-            </div>
+            
         </div>
     </div>
  
-
-        <img src="{{ i.urlToImage }}" height="200px" width="200px" alt=" "/>
-
-        <p>{{ i.author }}</p>
-        <p>{{ i.title }}</p>
-        <p>{{ i.description }}</p>
-
-        <a href= "{{ i.url }}" target="blank"> Read More</a>
-        <small> Published at: {{ i.publishedAt}}</small>
-
-
-    
-    {% endblock  %}
-    
+    {% endblock %}   
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
