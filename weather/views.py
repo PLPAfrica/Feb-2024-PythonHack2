@@ -1,21 +1,17 @@
-import os
+import logging
+from datetime import timedelta
+
+import dotenv
 import requests
 from django.shortcuts import render
 from django.utils.timezone import now
-from datetime import timedelta
+
 from .models import WeatherData
-import logging
-import dotenv
 
 logger = logging.getLogger(__name__)
 
-<<<<<<< HEAD
 API_BASE_URL = 'https://api.weatherapi.com/v1/current.json'
 API_KEY = dotenv.get_key('.env', 'WEATHER_API_KEY')
-=======
-API_BASE_URL = 'http://api.weatherapi.com/v1/current.json'
-API_KEY = dotenv.find_dotenv('.env', WEATHER_API_KEY)
->>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
 
 
 def get_weather_for_location(request, location):
@@ -35,15 +31,10 @@ def get_weather_for_location(request, location):
             # Extract necessary fields from the API response
             temperature = weather_data['current']['temp_c']
             conditions = weather_data['current']['condition']['text']
-<<<<<<< HEAD
             icon = weather_data['current']['condition']['icon']
             # Save the new weather data to the database
             weather = WeatherData(location=location, temperature=temperature, conditions=conditions,
                                   condition_icon=icon,
-=======
-            # Save the new weather data to the database
-            weather = WeatherData(location=location, temperature=temperature, conditions=conditions,
->>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
                                   timestamp=now())  # Added timestamp when saving new weather data
             weather.save()
             logger.info(f"Saved new weather data for location: {location}")

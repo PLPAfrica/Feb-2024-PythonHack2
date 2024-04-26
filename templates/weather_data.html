@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% extends '_base.html' %}
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css'>
 
@@ -28,7 +27,7 @@
                         <span class="font-semibold mt-1 text-gray-500">Time of Record {{ weather.timestamp|date:"Y-m-d H:i:s" }}</span>
     
                     </div>
-                    <img class="h-32 w-32 fill-current ui-icon-image text-gray-400 mt-3" src="{{ weather.condition_icon }}" alt="weather icon">
+                    <img class="h-32 w-32 fill-current image text-gray-400 mt-3" src="{{ weather.condition_icon }}" alt="weather icon">
                 </div>
                 <div class="flex justify-between mt-12">
                     <div class="flex flex-col items-center">
@@ -135,16 +134,3 @@
         </div>
     </div>
 {% endblock %}
-=======
-<div class="weather-info">
-    <h2>Weather Data</h2>
-    {% if weather %}
-        <p><strong>Location:</strong> {{ weather.location }}</p>
-        <p><strong>Temperature:</strong> {{ weather.temperature }} °C</p>
-        <p><strong>Conditions:</strong> {{ weather.conditions }}</p>
-        <p><strong>Timestamp:</strong> {{ weather.timestamp|date:"Y-m-d H:i:s" }}</p>
-    {% else %}
-        <p>No weather data available.</p>
-    {% endif %}
-</div>
->>>>>>> 16c2ba80e260c150282793b09eb0f68829f43666
