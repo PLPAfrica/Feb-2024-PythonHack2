@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-kb7hzecs(oov1r*#fzq^df3isnd=1hz35&!p!x*+!c5keu!7*!
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'a314-154-159-237-165.ngrok-free.app',
+    '0931-154-159-237-25.ngrok-free.app',
     '127.0.0.1',
     'localhost',
 ]
@@ -36,7 +36,7 @@ ALLOWED_HOSTS = [
 CORS_ORIGIN_ALLOW_ALL = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://a314-154-159-237-165.ngrok-free.app',
+    'https://0931-154-159-237-25.ngrok-free.app',
 ]
 
 # Application definition
@@ -152,5 +152,5 @@ STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 

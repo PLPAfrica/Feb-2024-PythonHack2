@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 class BlogPostForm(forms.ModelForm):
     class Meta:
         model = BlogPost
-        fields = ('title', 'content', 'tags')
+        fields = ('title', 'content', 'image', 'tags')
 
     def save(self, commit=True):
         try:

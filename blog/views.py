@@ -1,14 +1,12 @@
-from django.shortcuts import render
+# from weather.utils import get_weather_data_for_location  # Import the utility function from the weather app
+import logging
+
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 
-import weather
-from .forms import BlogPostForm
-from django.contrib import messages
+from .forms import BlogPostForm  # Import the BlogPostForm
 from .models import BlogPost
-from django.contrib.auth.decorators import login_required
-import logging
-# from weather.utils import get_weather_data_for_location  # Import the utility function from the weather app
-from django.contrib.auth.forms import UserCreationForm
 
 logger = logging.getLogger(__name__)
 
@@ -41,9 +39,10 @@ def post_detail(request, pk):
 def post_create(request):
     try:
         if request.method == 'POST':
-            form = BlogPostForm(request.POST)
+            form = BlogPostForm(request.POST, request.FILES)  # Include request.FILES for file uploads
             if form.is_valid():
                 post = form.save(commit=False)
+                post.author = request.user  # Assign the current user as the author
                 post.save()
                 messages.success(request, f'Post "{post.title}" has been successfully created!')
                 return redirect('post_detail', pk=post.pk)
@@ -61,9 +60,10 @@ def post_edit(request, pk):
     try:
         post = get_object_or_404(BlogPost, pk=pk)
         if request.method == 'POST':
-            form = BlogPostForm(request.POST, instance=post)
+            form = BlogPostForm(request.POST, request.FILES, instance=post)  # Include request.FILES for file uploads
             if form.is_valid():
                 post = form.save(commit=False)
+                post.author = request.user  # Assign the current user as the author
                 post.save()
                 messages.success(request, f'Post "{post.title}" has been successfully updated!')
                 return redirect('post_detail', pk=post.pk)
