@@ -2,16 +2,16 @@ import requests
 from django.shortcuts import render
 
 def home(request):
-  # USING APIS => Example 1
-  response = requests.get('https://api.github.com/events')
-  data = response.json()
-  result = data[0]["repo"]
+    # generating random dog images
+    dog_image_response = requests.get('https://dog.ceo/api/breeds/image/random')
+    dog_image = dog_image_response.json()
+    random_dog_image = dog_image['message']
+    
+    return render(request, 'index.html', {'random_dog_image': random_dog_image})
 
-  # Example 2
-  reponse2 = requests.get('https://dog.ceo/api/breeds/image/random')
-  data2 = reponse2.json()
-  result2 = data2["message"]
-
-
-  
-  return render(request, 'templates/index.html', {'result': result, 'result2': result2})
+def get_random_dog_fact(request):
+    response = requests.get('https://api.dog-facts-api.dog/facts/random')
+    data = response.json()
+    random_dog_fact = data['fact']
+    
+    return render(request, 'index.html', {'random_dog_fact': random_dog_fact})
