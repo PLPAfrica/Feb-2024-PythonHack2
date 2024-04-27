@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 def home (request):
     
-    response = requests.get('https://dog.ceo/api/breeds/image/random')
+    response = requests.get('https://dog.ceo/api/breeds/image/random', timeout=5)
     data = response.json()
     random_dog_image = data['message']
 
