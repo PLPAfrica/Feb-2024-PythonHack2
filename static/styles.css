@@ -1,9 +1,13 @@
-body{
-  background: hotpink
+.container{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: burlywood;
+  border-radius: 5px;
 }
 
 img{
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 9999;
 }
