@@ -45,7 +45,7 @@ def post_create(request):
                 return redirect('post_detail', pk=post.pk)
         else:
             form = BlogPostForm()
-            messages.error(request, f'Validation error occurred: {messages}')
+            messages.error(request, )
         return render(request, 'post_edit.html', {'form': form})
     except ValidationError as e:
         messages.error(request, f'Validation error occurred: {e}')

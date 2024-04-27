@@ -14,7 +14,7 @@ class Tag(models.Model):
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=200)
-    content = HTMLField()
+    content = HTMLField(blank=True)
     image = models.ImageField(upload_to='blog_images/', blank=True, null=True)
     publication_date = models.DateTimeField(default=timezone.now)
     tags = models.ManyToManyField(Tag, related_name='blog_posts')
@@ -31,9 +31,9 @@ class BlogPost(models.Model):
 
 
 class Comment(models.Model):
-    blog_post = models.ForeignKey(BlogPost, on_delete=models.CASCADE, related_name='comments')
-    author_name = models.CharField(max_length=100)
-    comment_text = models.TextField()
+    blog_post = models.ForeignKey(BlogPost, on_delete=models.CASCADE, related_name='comments', null=True, blank=True)
+    author_name = models.CharField(max_length=100, null=True, blank=True)
+    comment_text = models.TextField(null=True, blank=True)
     publication_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):

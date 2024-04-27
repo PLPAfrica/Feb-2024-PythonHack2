@@ -1,12 +1,17 @@
 from django import forms
 from django.contrib import messages
+from django.forms import ModelForm
+
 from .models import BlogPost, Comment
+from tinymce.widgets import TinyMCE
 
 
 class BlogPostForm(forms.ModelForm):
+    content = forms.CharField(widget=TinyMCE(attrs={'cols': 80, 'rows': 30}))
+    author = forms.CharField(disabled=True)
+
     class Meta:
         model = BlogPost
-        content = forms.CharField(widget=forms.HiddenInput())
         fields = ('title', 'content', 'image', 'tags')
 
     def save(self, commit=True):
@@ -21,17 +26,9 @@ class BlogPostForm(forms.ModelForm):
             raise e
 
 
-class CommentForm(forms.ModelForm):
+class CommentForm(ModelForm):
     class Meta:
         model = Comment
-        fields = ('author_name', 'comment_text')
+        fields = ['comment_text', ]
 
-    def save(self, commit=True):
-        try:
-            comment = super(CommentForm, self).save(commit=False)
-            if commit:
-                comment.save()
-            return comment
-        except Exception as e:
-            messages.error("An error occurred while saving the comment form: {}".format(str(e)))
-            raise e
+

@@ -5,34 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="Work on blog posts">
-      <change afterPath="$PROJECT_DIR$/staticfiles/django_tinymce/init_tinymce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/forgot_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0005_category_alter_blogpost_content.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0006_post.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0007_rename_date_post_publication_date_post_tags_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0008_contact.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0009_remove_comment_author_name_remove_comment_blog_post_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0010_blogpost_category_blogpost_slug_blogpost_status_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0011_remove_blogpostx_author_remove_blogpostx_tags_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0012_remove_blogpost_slug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blog_images/PLPAfrica_Hackathon.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/src/comments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/src/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/src/post_detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/contact_us.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_create_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/blogcast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blogcast.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa974ce7-8630-422b-ada3-dbb7f6435930.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa974ce7-8630-422b-ada3-dbb7f6435930.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogcast/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcast/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogcast/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcast/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/src/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/src/output.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +45,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Python Script" />
         <option value="Python Script" />
         <option value="HTML File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -88,32 +88,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.blogcast.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "21.4.0",
-    "javascript.nodejs.core.library.typings.version": "20.12.7",
-    "last_opened_file_path": "G:/blogcast/db.sqlite3",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
-    "ts.external.directory.path": "D:\\JetBrains\\PyCharm2023.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.blogcast.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;21.4.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.7&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/blogcast/db.sqlite3&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\JetBrains\\PyCharm2023.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\blogcast\weather" />
@@ -175,7 +175,8 @@
       <workItem from="1714085266307" duration="4723000" />
       <workItem from="1714112586134" duration="17471000" />
       <workItem from="1714130869822" duration="8863000" />
-      <workItem from="1714140787039" duration="24820000" />
+      <workItem from="1714140787039" duration="25009000" />
+      <workItem from="1714196163187" duration="7535000" />
     </task>
     <task id="LOCAL-00001" summary="Work on blog posts">
       <option name="closed" value="true" />
