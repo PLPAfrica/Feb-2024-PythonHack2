@@ -2,9 +2,70 @@
 
 
 {% block content %}
-    
 
+<div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 z-50 justify-center items-center sm:px-4 md:px-8 lg:px-32 h-[calc(100%-1rem)] max-h-full ">
+    <!-- Your modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <button type="button" onclick="closeModal()" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="progress-modal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+            <div class="p-4 md:p-5">
+                <img class="w-16 h-12 text-gray-400 dark:text-gray-500 mb-4" aria-hidden="true" src="/media/plp_logo.png"></img>
 
+                <h3 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">PLP Week 10 Hackathon</h3>
+                <p class="text-gray-500 dark:text-gray-400 mb-6">This project was created for the Week 10 PLP Africa Learning Programme Hackathon that took place in April 2024. The project is a work in progress. Thank you for being here!<p>
+                <div class="flex justify-between mb-1 text-gray-500 dark:text-gray-400">
+                    <span class="text-base font-normal">Progress</span>
+                    <span class="text-sm font-semibold text-gray-900 dark:text-white">19 of 35 Tasks</span>
+                </div>
+                <div id="" class="progress-bar w-full bg-primary-dark rounded-full h-2.5 dark:bg-gray-600">
+                    <div class="progress-bar bg-orange-500 h-2.5 rounded-full" style="width: 54%"></div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center mt-6 space-x-4 rtl:space-x-reverse justify-between">
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" href="https://github.com/simlexx-k/Feb-2024-PythonHack2">GitHub</button>
+                    <button data-modal-hide="popup-modal" onclick="closeModal()" type="button" class="py-2.5 px-5 text-sm font-medium text-white focus:outline-none bg-primary-dark rounded-lg border border-gray-200 hover:bg-primary-dark hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-primary-dark">Close</button>
+                </div>
+            </div>
+        </div>
+</div>
     
+    <!-- CSS for progress animation -->
+<style>
+    .progress-bar {
+        animation: progressAnimation 2s ease-in-out forwards;
+    }
+
+    @keyframes progressAnimation {
+        from {
+            width: 0;
+        }
+        to {
+            width: 54%;
+        }
+    }
+</style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the modal element
+        var modal = document.getElementById('popup-modal');
+
+        // Open the modal when the page is loaded
+        if (modal) {
+            modal.classList.remove('hidden');
+        }
+    });
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById('popup-modal');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
+    }
+</script>
     
 {% endblock %}

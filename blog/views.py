@@ -88,3 +88,7 @@ def post_delete(request, pk):
     except OperationalError as e:
         messages.error(request, 'Database error occurred while deleting the post. Please try again.')
         return redirect('post_detail', pk=pk)
+
+
+def about(request):
+    return render(request, 'about.html')

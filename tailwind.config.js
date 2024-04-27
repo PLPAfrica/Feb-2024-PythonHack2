@@ -13,6 +13,7 @@ module.exports = {
         secondary: '#FFFFFF',
         tertiary: '#F2F4F7',
         quaternary: '#141517',
+        orange: '#E44F10',
         'primary-dark': '#E44E17', // Added primary-dark color
       },
       fontFamily: {

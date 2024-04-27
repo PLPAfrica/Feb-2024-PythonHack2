@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="Work on blog posts">
-      <change afterPath="$PROJECT_DIR$/media/blog_images/PLPAfrica_Hackathon_JBvayfE.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/blog_images/PLPAfrica_Hackathon_r9WXw7E.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pictures/PLPAfrica_Hackathon_FLYejJp.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blogcast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blogcast.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd6f6b3b-5cb3-49c7-964d-449bdddf636e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd6f6b3b-5cb3-49c7-964d-449bdddf636e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa974ce7-8630-422b-ada3-dbb7f6435930.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa974ce7-8630-422b-ada3-dbb7f6435930.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/plp_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/output.a9ec2e21b505.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogcast/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcast/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/src/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/src/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/post_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +160,7 @@
       <workItem from="1714130869822" duration="8863000" />
       <workItem from="1714140787039" duration="25009000" />
       <workItem from="1714196163187" duration="7535000" />
-      <workItem from="1714236188342" duration="7298000" />
+      <workItem from="1714236188342" duration="14464000" />
     </task>
     <task id="LOCAL-00001" summary="Work on blog posts">
       <option name="closed" value="true" />
