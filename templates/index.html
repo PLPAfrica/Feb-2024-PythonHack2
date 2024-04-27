@@ -1,22 +1,25 @@
-{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'styles.css' %}" />
-   <!-- <link rel="stylesheet" href="/static/styles.css" /> -->
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <title>Welcome to see land and water transport machines</title>
 </head>
 <body>
-  <h1>Hello, My name is Evans </h1>
+    <h1>Car Data</h1>
+    <ul>
+        {% for car in car_result %}
+            <li>{{ car }}</li>
+        {% endfor %}
+    </ul>
 
-  {{result}}
-
-  <h1>Random Pet</h1>
-{{result2}}
-  <img src={{result2}} alt="random pet" />
-  
+    <h1>Ship Data</h1>
+    <ul>
+        {% for ship in ship_result %}
+            <li>{{ ship }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
