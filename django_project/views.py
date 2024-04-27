@@ -15,7 +15,7 @@ def home (request):
     if breed_name:
 
         url = f'https://api.thedogapi.com/v1/breeds/search?q={breed_name}'
-        breed_response = requests.get(url)
+        breed_response = requests.get(url, timeout=5)
         breed_data = breed_response.json()
         breed_info = breed_data[0] if breed_data else None
 
