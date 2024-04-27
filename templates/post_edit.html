@@ -4,7 +4,7 @@
 
 {% block content %}
     <head>
-        <script src="https://cdn.tiny.cloud/1/9ebdb096l71bu7lkmyz7o6j7hoym95nn792zzrjifizqshhs/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <script src="https://cdn.tiny.cloud/1/9ebdb096l71bu7lkmyz7o6j7hoym95nn792zzrjifizqshhs/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
         <title>Create Blog Post</title>
     </head>
     <script>
@@ -22,6 +22,7 @@
         <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
             <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">New Post</h2>
             <form method="POST" enctype="multipart/form-data">
+                {{ form.errors }} 
                 {% if messages %}
                     <div class="mb-4 text-red-600 sm:justify-center">
                         {% for message in messages %}
@@ -50,9 +51,15 @@
                                 <option value="{{ tag.id }}">{{ tag.name }}</option>
                             {% endfor %}
                         </select>
+                    <div class="sm:col-span-2">
+                        <label for="author" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Author</label>
+                        <input type="text" name="author" id="author" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="" contentEditable="false" readonly> 
+                    </div>
                     </div>
                 </div>
+                <button type="reset" class="inline-flex flex-col-reverse items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-dark rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-dark">Discard</button>
                 <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-600 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">Create</button>
+
             </form>
         </div>
     </section>
