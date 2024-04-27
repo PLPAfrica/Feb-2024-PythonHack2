@@ -2,8 +2,8 @@ import requests
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def index(request):
-    # Generating random dog breed images
+def home (request):
+    
     response = requests.get('https://dog.ceo/api/breeds/image/random')
     data = response.json()
     random_dog_image = data['message']
@@ -13,7 +13,7 @@ def index(request):
     breed_name = request.GET.get('breed_name')
 
     if breed_name:
-        # Make API request to fetch breed information
+
         url = f'https://api.thedogapi.com/v1/breeds/search?q={breed_name}'
         breed_response = requests.get(url)
         breed_data = breed_response.json()
