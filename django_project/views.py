@@ -3,15 +3,19 @@ from django.shortcuts import render
 
 def home(request):
   # USING APIS => Example 1
-  response = requests.get('https://api.github.com/events')
-  data = response.json()
-  result = data[0]["repo"]
+  # views.py
+  import requests
+from django.shortcuts import render
 
-  # Example 2
-  reponse2 = requests.get('https://dog.ceo/api/breeds/image/random')
-  data2 = reponse2.json()
-  result2 = data2["message"]
+def home(request):
+    # Fetching data from the Car API
+    car_response = requests.get('https://api.Bentley.com/cars')
+    car_data = car_response.json()
+    car_result = car_data["cars"]
 
+    # Fetching data from the Ship API
+    ship_response = requests.get('https://api.maersk.com/ships')
+    ship_data = ship_response.json()
+    ship_result = ship_data["ships"]
 
-  
-  return render(request, 'templates/index.html', {'result': result, 'result2': result2})
+    return render(request, 'index.html', {'car_result': car_result, 'ship_result': ship_result})
