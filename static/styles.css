@@ -2,12 +2,12 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: yellowgreen;
+  background-color: burlywood;
   border-radius: 5px;
 }
 
 img{
-  width: 150px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 9999;
 }
