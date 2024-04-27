@@ -12,6 +12,8 @@ def home(request):
   data2 = reponse2.json()
   result2 = data2["message"]
 
-
+  # USING APIS => Example 3
+  response3 = requests.get('https://api.chucknorris.io/jokes/random')
+  data3 = response3.json()
+  result3 = data3["value"]
   
-  return render(request, 'templates/index.html', {'result': result, 'result2': result2})
