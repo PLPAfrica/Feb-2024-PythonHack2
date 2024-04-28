@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tiny.cloud/1/9ebdb096l71bu7lkmyz7o6j7hoym95nn792zzrjifizqshhs/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
     <title>BlogCast</title>
+    <link rel="canonical" href="#">
+    <link rel="stylesheet" href="{% static 'src/output.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -29,30 +31,117 @@
     <link rel="stylesheet" href="{% static 'src/output.css' %}">
     {% endcompress %}
 
+    <script>
+        
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('zD1iTsv7EQco3GO_szee');
+        } else {
+            document.documentElement.classList.remove('zD1iTsv7EQco3GO_szee')
+        }
+    </script>
+    <style>
+      #nprogress {
+        pointer-events: none;
+      }
+      #nprogress .bar {
+        background: rgb(63,131,248);
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+      }
+      #nprogress .peg {
+        display: block;
+        position: absolute;
+        right: 0px;
+        width: 100px;
+        height: 100%;
+        box-shadow: 0 0 10px rgb(63,131,248), 0 0 5px rgb(63,131,248);
+        opacity: 1;
+        -webkit-transform: rotate(3deg) translate(0px, -4px);
+        -ms-transform: rotate(3deg) translate(0px, -4px);
+        transform: rotate(3deg) translate(0px, -4px);
+      }
+      #nprogress .spinner {
+        display: block;
+        position: fixed;
+        z-index: 1031;
+        top: 15px;
+        right: 15px;
+      }
+      #nprogress .spinner-icon {
+        width: 18px;
+        height: 18px;
+        box-sizing: border-box;
+        border: solid 2px transparent;
+        border-top-color: rgb(63,131,248);
+        border-left-color: rgb(63,131,248);
+        border-radius: 50%;
+        -webkit-animation: nprogresss-spinner 400ms linear infinite;
+        animation: nprogress-spinner 400ms linear infinite;
+      }
+      .nprogress-custom-parent {
+        overflow: hidden;
+        position: relative;
+      }
+      .nprogress-custom-parent #nprogress .spinner,
+      .nprogress-custom-parent #nprogress .bar {
+        position: absolute;
+      }
+      @-webkit-keyframes nprogress-spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes nprogress-spinner {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
 </head>
 
-<body class="bg-green-50 mb-auto h-10">
+<header>
+    <nav id="mainNavbar" data-sticky="true" class="FYJhBVe7LqcLLAMe1ZLt _wwlNxo_fdkfJYKqAJqV tw8OcvA4go4h73YpX7X8 MxkCh1Od7CZVGVGtpahb NhUb7XmrGKXGEYnwyUsF _vYX4e3iy_9sP8mOC6hH LVqg7bHx69xdHlJvpacM cnUpD2T3cZmKFSEdgQ7X XfOd8dB5a5tnNTUofAM4 f_pZKe8QScGX_mEa8hAY BmY6mlvEjKmdHLA5eTxJ km_RWEuqSUho14dOFViz AqJRKTLwhNm212ZygOLQ">
+        <div class="_Xb_LessUL6KItlVbtOZ EfHRkCdp5wfxElAwFFJY I48kjgygTcKBfy1Ned2k WhuAYjbSprszuhtqgVk7 rDy78aqYCdlVbn1AYx_Y O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p">
+            <a href="#" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7">
+                <svg width="80" height="50" viewBox="0 0 100 100" class="B75KlS0q3LUZKDWET_cF _hvyBeXYc1FPGy0YmCOZ">
+                      <circle cx="50" cy="50" r="40" fill="#4285F4"></circle>
+                      <path d="M50 30c-7.7 0-14 6.3-14 14s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm0 24c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#FFF"></path>
+                      <circle cx="80" cy="20" r="12" fill="#FFD700"></circle>
+                      <path d="M80 40c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#FFF"></path>
+                      <path d="M80 30a6 6 0 1 0 .002 11.999A6 6 0 0 0 80 30zM80 16c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z" fill="#FFF"></path>
+               </svg>
+                <span class="HUMuJqyL8DSyEOIMm8QW m_mKfjlZ88T0NgHyO9yH B0KRAxUWa6o1fcxoCms2 Q3bgrRxDILmRtWYpI2Yt _5GR6uhgl9vIjB1LEb7b">BlogCast</span>
+            </a>
+            <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 _Nsa_J4pPpFsJjS3w1Sj">
+                 <button id="themeToggle" data-tooltip-target="tooltip-toggle" type="button" class="wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v MUruTVQ0LJ0ADcZ_3oEU uK1AbKa5fIykTo6CO7YT jPovGh08547knX9s4FqY _Xtntc2N2_AY67dJhuUG SsLSZQr9VmMR3POJWUmS VxFW1ClEpXlvUUVJkYvt N_7GgK_MqJ2z0ja0ZrpY sNhGMfXh5qpOlS95mw8M Oq5FwunMmjEMud7NEDCO i_geGniExNNUaEFKdZKu">
+                    <svg id="themeToggleDarkIcon" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="themeToggleLightIcon" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7 DXlAhON9HabjpikY0rWQ" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  </button>
+                  <div id="tooltip-toggle" role="tooltip" class="HI5IirNQN9pY0ckoTi0H pBZOIAJXjLOKdcjYHkUK S9rab2WS0OOa6DqfstAj NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY mgJAKK9vWtU1PSpDOSy7 zV1doz5HuCR0m4SQlQet _MO_lJR5Hklmx0NbEkFB yEEOGJ8nCthu9HloNhpn N_7GgK_MqJ2z0ja0ZrpY G2y57JwazuI3Mieab_UO QaOXMOoKf7XJEzkQTATF rGM8zuOyIgzmuHEHnXXC _LcfOqo6y_KEOOaEMmVq" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(749.5px, 58px, 0px);">
+                      Toggle dark mode
+                      <div class="_NXhWLgR824ivd7ez6IM" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(68.5px, 0px, 0px);"></div>
+                  </div>
+                      <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-8 h-8 rounded-full" src="{% if user.is_authenticated %}{{ user.profile.profile_picture.url }}{% else %}/staticfiles/assets/img/avatar.jpg{% endif %}" alt="user photo">
+                      </button>
 
-    <nav class="bg-green-50 border-gray-200 dark:bg-gray-900">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <svg width="70" height="80" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="40" fill="#4285F4"></circle>
-              <path d="M50 30c-7.7 0-14 6.3-14 14s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm0 24c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#FFF"></path>
-              <circle cx="80" cy="20" r="12" fill="#FFD700"></circle>
-              <path d="M80 40c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#FFF"></path>
-              <path d="M80 30a6 6 0 1 0 .002 11.999A6 6 0 0 0 80 30zM80 16c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z" fill="#FFF"></path>
-          </svg>
-
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BlogCast</span>
-        </a>
-        <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-
-          <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
-            <span class="sr-only">Open user menu</span>
-            <img class="w-8 h-8 rounded-full" src="{% if user.is_authenticated %}{{ user.profile.profile_picture.url }}{% else %}/staticfiles/assets/img/avatar.jpg{% endif %}" alt="user photo">
-          </button>
-
+                    <button id="mobile-menu-button" data-collapse-toggle="mobile-menu-2" type="button" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 A4iaCXY4oLpxKJSm_FBT u32IvN5Hgfj_xO45uORf sNhGMfXh5qpOlS95mw8M wUNCdbXmTwWWuj0aoRKU N_7GgK_MqJ2z0ja0ZrpY VJGcMehw6AWUUKkKfrVi MUruTVQ0LJ0ADcZ_3oEU jPovGh08547knX9s4FqY yAuyr7a15_iLmVEUp7kE SsLSZQr9VmMR3POJWUmS Df2GJckjMJ6cAkEJ869v uK1AbKa5fIykTo6CO7YT lhLS4oJ7vUYjfBcK5ELx" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="ftvY7f2En3GQ06SgSMDx">Open main menu</span>
+                        <svg class="__fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="DXlAhON9HabjpikY0rWQ __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+            </div>
           <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
             <div class="px-4 py-3">
 
@@ -85,46 +174,167 @@
             </ul>
           </div>
 
-          <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-user" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
-            </svg>
-          </button>
+            <div class="DXlAhON9HabjpikY0rWQ I48kjgygTcKBfy1Ned2k WhuAYjbSprszuhtqgVk7 _vYX4e3iy_9sP8mOC6hH CvX5A16NMDSDcLe4HLIZ LEh4kArk_2cftN6B2eHX HP5_nop_fWoE0qglPFwe j5w_LN24FuYb6WiMGvul z2kNVEq9LYXEaTHili51 _GwIUgMjiIAIV41BO1BK hepJeZp1tj4vrl0oexW0 p0VAQHK07IsfUfdiKKhJ yKypayEIBVhHWU6T7onf" id="mobile-menu-2">
+                <ul class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY N_7GgK_MqJ2z0ja0ZrpY _rCvSXeCKULutG6NOkCY Vrj0lDEscnGvhs_q3TcF ISA8BEpGCncLzEkoKoOV">
+                    <li>
+                        <a href="#" class="v1DOVLwZv5vE5pLd2zoq faFDFwsII0NnJXopj8aI TsygRW56pJakhOop3oFT SgVGGGauY268teHB5hlM uZtaXRAMNctX50rLdkzn wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp MUruTVQ0LJ0ADcZ_3oEU O7AdhTTKttTbaVPYFmXB nIUvteJ7jb_x_BtYSMYG KtbQw_7J4_KQQ0nv6Tfg T90FfAugylwv0PJGK_0U _5GR6uhgl9vIjB1LEb7b PEqhFj8CKfcm4JbGoaJR uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix ogQtHgTwMPn_R3a5qEUo wtDhnP7iN7ZBczI9vrcc" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'post_list' %}" class="v1DOVLwZv5vE5pLd2zoq faFDFwsII0NnJXopj8aI TsygRW56pJakhOop3oFT SgVGGGauY268teHB5hlM uZtaXRAMNctX50rLdkzn wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp MUruTVQ0LJ0ADcZ_3oEU O7AdhTTKttTbaVPYFmXB nIUvteJ7jb_x_BtYSMYG KtbQw_7J4_KQQ0nv6Tfg T90FfAugylwv0PJGK_0U _5GR6uhgl9vIjB1LEb7b PEqhFj8CKfcm4JbGoaJR uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix ogQtHgTwMPn_R3a5qEUo wtDhnP7iN7ZBczI9vrcc">Blog</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}" class="v1DOVLwZv5vE5pLd2zoq faFDFwsII0NnJXopj8aI TsygRW56pJakhOop3oFT SgVGGGauY268teHB5hlM uZtaXRAMNctX50rLdkzn wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp MUruTVQ0LJ0ADcZ_3oEU O7AdhTTKttTbaVPYFmXB nIUvteJ7jb_x_BtYSMYG KtbQw_7J4_KQQ0nv6Tfg T90FfAugylwv0PJGK_0U _5GR6uhgl9vIjB1LEb7b PEqhFj8CKfcm4JbGoaJR uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix ogQtHgTwMPn_R3a5qEUo wtDhnP7iN7ZBczI9vrcc">About</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'index' %}" class="v1DOVLwZv5vE5pLd2zoq faFDFwsII0NnJXopj8aI TsygRW56pJakhOop3oFT SgVGGGauY268teHB5hlM uZtaXRAMNctX50rLdkzn wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp MUruTVQ0LJ0ADcZ_3oEU O7AdhTTKttTbaVPYFmXB nIUvteJ7jb_x_BtYSMYG KtbQw_7J4_KQQ0nv6Tfg T90FfAugylwv0PJGK_0U _5GR6uhgl9vIjB1LEb7b PEqhFj8CKfcm4JbGoaJR uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix ogQtHgTwMPn_R3a5qEUo wtDhnP7iN7ZBczI9vrcc">Progress Tracker</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'index' %}" class="v1DOVLwZv5vE5pLd2zoq faFDFwsII0NnJXopj8aI TsygRW56pJakhOop3oFT SgVGGGauY268teHB5hlM uZtaXRAMNctX50rLdkzn wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp MUruTVQ0LJ0ADcZ_3oEU O7AdhTTKttTbaVPYFmXB nIUvteJ7jb_x_BtYSMYG KtbQw_7J4_KQQ0nv6Tfg T90FfAugylwv0PJGK_0U _5GR6uhgl9vIjB1LEb7b PEqhFj8CKfcm4JbGoaJR uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix ogQtHgTwMPn_R3a5qEUo wtDhnP7iN7ZBczI9vrcc">Team</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'index' %}" class="v1DOVLwZv5vE5pLd2zoq faFDFwsII0NnJXopj8aI TsygRW56pJakhOop3oFT SgVGGGauY268teHB5hlM uZtaXRAMNctX50rLdkzn MUruTVQ0LJ0ADcZ_3oEU O7AdhTTKttTbaVPYFmXB KtbQw_7J4_KQQ0nv6Tfg T90FfAugylwv0PJGK_0U _5GR6uhgl9vIjB1LEb7b PEqhFj8CKfcm4JbGoaJR uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix ogQtHgTwMPn_R3a5qEUo wtDhnP7iN7ZBczI9vrcc">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+</header>
 
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
-          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+<body class="LLklfDv5KODwBpP5ixlG z2kNVEq9LYXEaTHili51" data-new-gr-c-s-check-loaded="14.1169.0" data-gr-ext-installed="">
+{% block content %}
+
+    
+{% endblock %}
+  <footer class="ZfgMaxtsBzFu151xg7KP wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp j5w_LN24FuYb6WiMGvul _Xns0Wjl3BLlIPtz2edB wtDhnP7iN7ZBczI9vrcc">
+    <div class="O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p lMGGxJGpq_EmDqikc6xq rDy78aqYCdlVbn1AYx_Y NnjUZ5xJwhg9QVw6z6tO c2o4iKAiorg3anKO2ST_">
+      <div class="hfg9kH8_fM5X2MfWq1BA _jjiW4OW1eKb4h1uX2hW kOhzJ5YoQlCRjiHBbWR_ svroy4BTor_OvMWK8btV">
+        <div class="C_juA8vEnGH_JWwKbPcz">
+          <a href="#" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 a2y87NW2EtN3uAJReryb m_mKfjlZ88T0NgHyO9yH B0KRAxUWa6o1fcxoCms2 uZtaXRAMNctX50rLdkzn eiAhqS1bImHNBRa_ecAW _5GR6uhgl9vIjB1LEb7b">
+          <svg width="70" height="50" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" fill="#4285F4"></circle>
+              <path d="M50 30c-7.7 0-14 6.3-14 14s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm0 24c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#FFF"></path>
+              <circle cx="80" cy="20" r="12" fill="#FFD700"></circle>
+              <path d="M80 40c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#FFF"></path>
+              <path d="M80 30a6 6 0 1 0 .002 11.999A6 6 0 0 0 80 30zM80 16c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z" fill="#FFF"></path>
+          </svg>
+              BlogCast
+          </a>
+          <p class="D5cj8XyycefGz2EsQlf2 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+            We are a community of devs interested in developing modern solutions and revolutionizing the
+              tech industry in Kenya. Our team is experienced in a wide range of development systems
+              and frameworks. Feel free to reach out.
+          </p>
+          <ul class="_Xb_LessUL6KItlVbtOZ zDMTz821HyZxWe7D7VZD IeM1vctxzYlnJQkvtqkE">
             <li>
-              <a href="{% url 'index' %}" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+              <a href="#" class="wUNCdbXmTwWWuj0aoRKU wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix Df2GJckjMJ6cAkEJ869v">
+                <svg class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="{% url 'post_list' %}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Blog</a>
+              <a href="#" class="wUNCdbXmTwWWuj0aoRKU wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix Df2GJckjMJ6cAkEJ869v">
+                <svg class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              <a href="#" class="wUNCdbXmTwWWuj0aoRKU wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix Df2GJckjMJ6cAkEJ869v">
+                <svg class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+              <a href="#" class="wUNCdbXmTwWWuj0aoRKU wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix Df2GJckjMJ6cAkEJ869v">
+                <svg class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+              <a href="#" class="wUNCdbXmTwWWuj0aoRKU wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix Df2GJckjMJ6cAkEJ869v">
+                <svg class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          </ul>
+        </div>
+        <div class="ExDYAN2ffhfa1W_1TatN">
+          <h2 class="taisKvlFToKAuWpUMGKi sNhGMfXh5qpOlS95mw8M B0KRAxUWa6o1fcxoCms2 uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">Company</h2>
+          <ul class="wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="{% url 'about' %}" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">About</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Careers</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Brand Center</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="{% url 'post_list' %}" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="ExDYAN2ffhfa1W_1TatN">
+          <h2 class="taisKvlFToKAuWpUMGKi sNhGMfXh5qpOlS95mw8M B0KRAxUWa6o1fcxoCms2 uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">Help center</h2>
+          <ul class="wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Discord Server</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Twitter</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Facebook
+            </a></li><a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">
+            </a><li class="IcxvxSjEPCDi7nF2xYDi"><a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">
+              </a><a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="ExDYAN2ffhfa1W_1TatN">
+          <h2 class="taisKvlFToKAuWpUMGKi sNhGMfXh5qpOlS95mw8M B0KRAxUWa6o1fcxoCms2 uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">Legal</h2>
+          <ul class="wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Privacy Policy</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Licensing</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Terms</a>
+            </li>
+          </ul>
+        </div>
+        <div class="ExDYAN2ffhfa1W_1TatN">
+          <h2 class="taisKvlFToKAuWpUMGKi sNhGMfXh5qpOlS95mw8M B0KRAxUWa6o1fcxoCms2 uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">Download</h2>
+          <ul class="wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">iOS</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Android</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">Windows</a>
+            </li>
+            <li class="IcxvxSjEPCDi7nF2xYDi">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">MacOS</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- End of new HTML -->
-
-    <div class="container mx-auto mt-4 bg-green-50">
-        {% block content %}
-        {% endblock content %}
+  
+      <hr class="q2vUfuqyoScx4VRrZ3Yc tw8OcvA4go4h73YpX7X8 x3yvkDaApFEjwKvXJv_Q mIfTr9Lyk4irJ_mJcLNf RbjELSaZ7ikYpd9JOVpU">
+  
+      <span class="v1DOVLwZv5vE5pLd2zoq sNhGMfXh5qpOlS95mw8M d9KaSaBFKzmTOUJHRwyE wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">© 2024 <a <a="" href="#" class="gY9luLGG3hnSAHgMh0Aq">BlogCast™</a>. All Rights Reserved.</span>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </footer>
 </body>
+<script src="https://flowbite.com/marketing-ui/demo/app.bundle.js"></script>
 
 </html>
