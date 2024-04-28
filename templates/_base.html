@@ -12,6 +12,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tiny.cloud/1/9ebdb096l71bu7lkmyz7o6j7hoym95nn792zzrjifizqshhs/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
     <title>BlogCast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://flowbite.com/marketing-ui/demo/app.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://flowbite.com/marketing-ui/demo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://flowbite.com/marketing-ui/demo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://flowbite.com/marketing-ui/demo/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="https://flowbite.com/marketing-ui/demo/favicon.ico">
+    <link rel="manifest" href="https://flowbite.com/marketing-ui/demo/site.webmanifest">
+    <link rel="mask-icon" href="https://flowbite.com/marketing-ui/demo/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 
     {% compress css %}
     <link rel="stylesheet" href="{% static 'src/output.css' %}">
@@ -111,17 +123,7 @@
         {% block content %}
         {% endblock content %}
     </div>
-    <div class="flex flex-col h-screen justify-between">
-        <footer class="h-10 bg-green-50 dark:bg-gray-900 align-middle center font-mono">
-            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            </div>
-              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify sm:flex-row sm:justify-center sm:font-serif">
-                  <span class="text-sm text-white-500 sm:text-center dark:text-white-400">© 2024 <a href="#" class="hover:underline">BlogCast™</a>. All Rights Reserved.
-                  </span>
-            </div>
-        </footer>
-    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 

@@ -21,6 +21,9 @@
     <orderEntry type="library" name="alpinejs" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="tinymce" level="application" />
+    <orderEntry type="library" name="app" level="application" />
+    <orderEntry type="library" name="flowbite" level="application" />
+    <orderEntry type="library" name="analytics" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
