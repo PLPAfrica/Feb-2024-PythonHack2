@@ -32,7 +32,7 @@
     {% endcompress %}
 
     <script>
-        
+
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('zD1iTsv7EQco3GO_szee');
         } else {
@@ -131,7 +131,7 @@
                       Toggle dark mode
                       <div class="_NXhWLgR824ivd7ez6IM" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(68.5px, 0px, 0px);"></div>
                   </div>
-                      <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+                      <button type="button" class="f4f7uCnb9uq5btwF_C_y flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
                         <span class="sr-only">Open user menu</span>
                         <img class="w-8 h-8 rounded-full" src="{% if user.is_authenticated %}{{ user.profile.profile_picture.url }}{% else %}/staticfiles/assets/img/avatar.jpg{% endif %}" alt="user photo">
                       </button>
@@ -142,7 +142,7 @@
                         <svg class="DXlAhON9HabjpikY0rWQ __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>
             </div>
-          <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+          <div class="z-50 hidden my-4 text-base bg-white list-none dark:bg-blue-600 divide-y divide-gray-100 rounded-lg shadow dark:divide-gray-600" id="user-dropdown">
             <div class="px-4 py-3">
 
               <span class="block text-sm text-gray-900 dark:text-white">{{ user.get_full_name }}</span>
@@ -203,7 +203,7 @@
 <body class="LLklfDv5KODwBpP5ixlG z2kNVEq9LYXEaTHili51" data-new-gr-c-s-check-loaded="14.1169.0" data-gr-ext-installed="">
 {% block content %}
 
-    
+
 {% endblock %}
   <footer class="ZfgMaxtsBzFu151xg7KP wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp j5w_LN24FuYb6WiMGvul _Xns0Wjl3BLlIPtz2edB wtDhnP7iN7ZBczI9vrcc">
     <div class="O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p lMGGxJGpq_EmDqikc6xq rDy78aqYCdlVbn1AYx_Y NnjUZ5xJwhg9QVw6z6tO c2o4iKAiorg3anKO2ST_">
@@ -328,13 +328,45 @@
           </ul>
         </div>
       </div>
-  
+
       <hr class="q2vUfuqyoScx4VRrZ3Yc tw8OcvA4go4h73YpX7X8 x3yvkDaApFEjwKvXJv_Q mIfTr9Lyk4irJ_mJcLNf RbjELSaZ7ikYpd9JOVpU">
-  
+
       <span class="v1DOVLwZv5vE5pLd2zoq sNhGMfXh5qpOlS95mw8M d9KaSaBFKzmTOUJHRwyE wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">© 2024 <a <a="" href="#" class="gY9luLGG3hnSAHgMh0Aq">BlogCast™</a>. All Rights Reserved.</span>
     </div>
   </footer>
-</body>
+
 <script src="https://flowbite.com/marketing-ui/demo/app.bundle.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const userMenuButton = document.getElementById("user-menu-button");
+    const userDropdown = document.getElementById("user-dropdown");
+
+    // Function to toggle the dropdown menu
+    function toggleUserDropdown() {
+      const ariaExpanded = userMenuButton.getAttribute("aria-expanded") === "true";
+      userMenuButton.setAttribute("aria-expanded", !ariaExpanded);
+      userDropdown.classList.toggle("hidden");
+    }
+
+    // Event listener to toggle the dropdown menu when the button is clicked
+    userMenuButton.addEventListener("click", toggleUserDropdown);
+
+    // Close the dropdown menu if user clicks outside of it
+    document.addEventListener("click", function(event) {
+      if (!userMenuButton.contains(event.target) && !userDropdown.contains(event.target)) {
+        userDropdown.classList.add("hidden");
+        userMenuButton.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    // Prevent closing the dropdown menu when clicking inside it
+    userDropdown.addEventListener("click", function(event) {
+      event.stopPropagation();
+    });
+  });
+</script>
+
+</body>
+
 
 </html>
