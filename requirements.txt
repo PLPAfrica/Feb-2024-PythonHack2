@@ -1,6 +1,7 @@
 Django==5.0.4
 python-dotenv==1.0.1
 Requests
+crispy-bootstrap4
 django-crispy-forms
 python-dotenv
 django-cors-headers
