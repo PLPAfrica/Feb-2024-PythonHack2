@@ -1,5 +1,6 @@
 Django==5.0.4
 python-dotenv==1.0.1
+Pillow
 Requests
 crispy-bootstrap4
 django-crispy-forms
