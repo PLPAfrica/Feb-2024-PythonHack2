@@ -34,7 +34,9 @@ def post_detail(request, pk):
         post = get_object_or_404(BlogPost, pk=pk)
         tags = Tag.objects.all()
         authors = Profile.objects.all()
-        return render(request, 'post_detail.html', {'post': post, 'tags': tags, 'authors': authors})
+        users = User.objects.all()
+        return render(request, 'post_detail.html', {'post': post, 'tags': tags, 'authors': authors,
+                                                    'users': users})
     except Http404:
         messages.error(request, 'Post does not exist.')
         return redirect('post_list')
