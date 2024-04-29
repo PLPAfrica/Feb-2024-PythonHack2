@@ -392,10 +392,10 @@
                         <div class="_vYX4e3iy_9sP8mOC6hH">
                             <footer class="_Xb_LessUL6KItlVbtOZ I48kjgygTcKBfy1Ned2k WhuAYjbSprszuhtqgVk7 a2y87NW2EtN3uAJReryb _vYX4e3iy_9sP8mOC6hH">
                                 <a href="#" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7">
-                                    <img class="gVRKrnJtC3dmx_ZmbNL1 __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="Jese Leos">
+                                    <img class="gVRKrnJtC3dmx_ZmbNL1 __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z Ll9q9VQNfffJO7sdzCuE" src="{{ post.author.profile_picture.url }}" alt="Author">
                                     <p class="f4f7uCnb9uq5btwF_C_y pIeRaxiBYr4M7rb4DESY _6Oprz_DyV1vIZ0CB8ME _pTQrluPoVrrBO5zHbWj _hvyBeXYc1FPGy0YmCOZ B0KRAxUWa6o1fcxoCms2 sNhGMfXh5qpOlS95mw8M uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
-                                        <span>Jese Leos</span>
-                                        <time class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv _hwqTgZJTAtH_xNLDM4u Df2GJckjMJ6cAkEJ869v _kuXZD69_sqsQzY9_2X3" pubdate="" datetime="2022-02-12" title="February 12th, 2022">Feb. 12, 2022</time>
+                                        <span>{{ post.author.user.get_full_name }}</span>
+                                        <time class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv _hwqTgZJTAtH_xNLDM4u Df2GJckjMJ6cAkEJ869v _kuXZD69_sqsQzY9_2X3" pubdate="" datetime="2022-02-12" title="Date Published">{{ post.publication_date }}</time>
                                     </p>
                                 </a>
                                 <button id="dropdownComment2Button" data-dropdown-toggle="dropdownComment2" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 A4iaCXY4oLpxKJSm_FBT sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY d9KaSaBFKzmTOUJHRwyE wUNCdbXmTwWWuj0aoRKU j5w_LN24FuYb6WiMGvul N_7GgK_MqJ2z0ja0ZrpY MUruTVQ0LJ0ADcZ_3oEU _Xtntc2N2_AY67dJhuUG jPovGh08547knX9s4FqY MBlbA3uqQQbrareCkUkv Df2GJckjMJ6cAkEJ869v z2kNVEq9LYXEaTHili51 uK1AbKa5fIykTo6CO7YT lhLS4oJ7vUYjfBcK5ELx" type="button">
@@ -594,19 +594,20 @@
                 <div class="VbdeSPSU7ACZ0NhsPt1Z taisKvlFToKAuWpUMGKi wUNCdbXmTwWWuj0aoRKU N_7GgK_MqJ2z0ja0ZrpY cPDkaXEB7uAZEDCL6Z16 tw8OcvA4go4h73YpX7X8 wtDhnP7iN7ZBczI9vrcc Df2GJckjMJ6cAkEJ869v">
                     <a href="#" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 IcxvxSjEPCDi7nF2xYDi">
                         <div class="_hvyBeXYc1FPGy0YmCOZ COLXryk4dLcCS3dLmD6b">
-                            <img class="l7V51rjvj6mC0O4FhkRh iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" alt="Jese Leos">
+                            <img class="l7V51rjvj6mC0O4FhkRh iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="{{ post.author.profile_picture.url }}" alt="Author Profile Picture">
                         </div>
                         <div class="_hvyBeXYc1FPGy0YmCOZ">
-                            <span class="v1DOVLwZv5vE5pLd2zoq _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">Jese Leos</span>
+                            <span class="v1DOVLwZv5vE5pLd2zoq _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">{{ post.author.user.get_full_name }}</span>
                             <span class="sNhGMfXh5qpOlS95mw8M">34k followers</span>
                         </div>
                     </a>
-                    <p class="IcxvxSjEPCDi7nF2xYDi sNhGMfXh5qpOlS95mw8M wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">Hey! I'm Jese Leos. I'm a career-changer. Bootcamp grad &amp; Dev.</p>
+                    <p class="IcxvxSjEPCDi7nF2xYDi sNhGMfXh5qpOlS95mw8M wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">Hey! I'm
+                        {{ post.author.user.get_full_name}}. I'm a {{ post.author.user.profile.job_title }}. I am experienced in {{ post.author.user.profile.skills }}.</p>
                     <dl class="stoYMLboBxORV8zF1M9k">
                         <dt class="a2y87NW2EtN3uAJReryb sNhGMfXh5qpOlS95mw8M u2gUZHq2Ln1UHr5agIwW uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">Location</dt>
-                        <dd class="gS7E_Skoj88f14yvKVTu sNhGMfXh5qpOlS95mw8M wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">California, United States</dd>
+                        <dd class="gS7E_Skoj88f14yvKVTu sNhGMfXh5qpOlS95mw8M wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">{{ post.author.location }}</dd>
                         <dt class="a2y87NW2EtN3uAJReryb sNhGMfXh5qpOlS95mw8M u2gUZHq2Ln1UHr5agIwW uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">Joined</dt>
-                        <dd class="sNhGMfXh5qpOlS95mw8M wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">September 20, 2018</dd>
+                        <dd class="sNhGMfXh5qpOlS95mw8M wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">{{ post.author.user.date_joined }}</dd>
                     </dl>
                     <button type="button" class="mgJAKK9vWtU1PSpDOSy7 P0sEMSGqLpokPnWnm0_G j8PPdjt2Dc923qK0hEwI _Xtntc2N2_AY67dJhuUG _acJDSUGqxRwM7YKVwYR _rCvSXeCKULutG6NOkCY N_7GgK_MqJ2z0ja0ZrpY sNhGMfXh5qpOlS95mw8M l60nmbBOLcqmCLlExDag MxkCh1Od7CZVGVGtpahb T0I_0kOq_tJmZAdv5_bO _Dsh402wwa0qrgkTUss2 jPovGh08547knX9s4FqY _kgZpkjnvcrdoNB9M68n _vYX4e3iy_9sP8mOC6hH">Follow</button>
                 </div>
@@ -623,55 +624,29 @@
                         </div>
                     </form>
                     <h4 class="taisKvlFToKAuWpUMGKi u2gUZHq2Ln1UHr5agIwW uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">Recommended topics</h4>
+                    {% for tag in tags %}
                     <div class="_Xb_LessUL6KItlVbtOZ EfHRkCdp5wfxElAwFFJY">
-                        <a href="#" class="DK6_0mhoLu2uYxXDdT_Z PSnnjK_gzYQSe6KMwoox sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY _hvyBeXYc1FPGy0YmCOZ QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS _CkVm1fnFsEefJMnQRlF G3KNykei0lIiBi5eGLpQ gS7E_Skoj88f14yvKVTu">Technology</a>
-                        <a href="#" class="DK6_0mhoLu2uYxXDdT_Z PSnnjK_gzYQSe6KMwoox sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY _hvyBeXYc1FPGy0YmCOZ QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS _CkVm1fnFsEefJMnQRlF G3KNykei0lIiBi5eGLpQ gS7E_Skoj88f14yvKVTu">Money</a>
-                        <a href="#" class="DK6_0mhoLu2uYxXDdT_Z PSnnjK_gzYQSe6KMwoox sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY _hvyBeXYc1FPGy0YmCOZ QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS _CkVm1fnFsEefJMnQRlF G3KNykei0lIiBi5eGLpQ gS7E_Skoj88f14yvKVTu">Art</a>
-                        <a href="#" class="DK6_0mhoLu2uYxXDdT_Z PSnnjK_gzYQSe6KMwoox sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY _hvyBeXYc1FPGy0YmCOZ QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS _CkVm1fnFsEefJMnQRlF G3KNykei0lIiBi5eGLpQ gS7E_Skoj88f14yvKVTu">Productivity</a>
-                        <a href="#" class="DK6_0mhoLu2uYxXDdT_Z PSnnjK_gzYQSe6KMwoox sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY _hvyBeXYc1FPGy0YmCOZ QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS _CkVm1fnFsEefJMnQRlF G3KNykei0lIiBi5eGLpQ gS7E_Skoj88f14yvKVTu">Psychology</a>
-                        <a href="#" class="DK6_0mhoLu2uYxXDdT_Z PSnnjK_gzYQSe6KMwoox sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY _hvyBeXYc1FPGy0YmCOZ QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS _CkVm1fnFsEefJMnQRlF G3KNykei0lIiBi5eGLpQ gS7E_Skoj88f14yvKVTu">Design</a>
-                        <a href="#" class="DK6_0mhoLu2uYxXDdT_Z PSnnjK_gzYQSe6KMwoox sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY _hvyBeXYc1FPGy0YmCOZ QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS _CkVm1fnFsEefJMnQRlF G3KNykei0lIiBi5eGLpQ">Mindfulness</a>
+                        <a href="#" class="DK6_0mhoLu2uYxXDdT_Z PSnnjK_gzYQSe6KMwoox sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY _hvyBeXYc1FPGy0YmCOZ QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS _CkVm1fnFsEefJMnQRlF G3KNykei0lIiBi5eGLpQ gS7E_Skoj88f14yvKVTu">{{ tag }}</a>
                     </div>
+                    {% endfor %}
                 </div>
                 <div class="VbdeSPSU7ACZ0NhsPt1Z _rCvSXeCKULutG6NOkCY wUNCdbXmTwWWuj0aoRKU LLklfDv5KODwBpP5ixlG N_7GgK_MqJ2z0ja0ZrpY cPDkaXEB7uAZEDCL6Z16 tw8OcvA4go4h73YpX7X8 z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc Df2GJckjMJ6cAkEJ869v">
                     <h4 class="taisKvlFToKAuWpUMGKi u2gUZHq2Ln1UHr5agIwW uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">Who to follow</h4>
                     <ul class="YjFQZPjOXMo3bxrac0IM wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                        {% for author in authors %}
                         <li class="_Xb_LessUL6KItlVbtOZ I48kjgygTcKBfy1Ned2k _pTQrluPoVrrBO5zHbWj">
                             <div class="_hvyBeXYc1FPGy0YmCOZ COLXryk4dLcCS3dLmD6b">
-                                <img class="l7V51rjvj6mC0O4FhkRh __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Bonnie Green">
+                                <img class="l7V51rjvj6mC0O4FhkRh __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z Ll9q9VQNfffJO7sdzCuE" src="{{ author.user.profile.profile_picture.url }}" alt="Bonnie Green">
                             </div>
                             <div class="_hvyBeXYc1FPGy0YmCOZ">
-                                <span class="v1DOVLwZv5vE5pLd2zoq _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">Bonnie Green</span>
-                                <span class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv">Web developer at Facebook</span>
+                                <span class="v1DOVLwZv5vE5pLd2zoq _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">{{ author.user.get_full_name }}</span>
+                                <span class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv">{{ author.job_title }}</span>
                             </div>
                             <div>
                                 <button type="button" class="faFDFwsII0NnJXopj8aI NGsrL3l2kxSHBbTfI3XZ sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn j5w_LN24FuYb6WiMGvul N_7GgK_MqJ2z0ja0ZrpY cPDkaXEB7uAZEDCL6Z16 tw8OcvA4go4h73YpX7X8 jPovGh08547knX9s4FqY MUruTVQ0LJ0ADcZ_3oEU _jU4BaOKl5BCND0u0lfU yH36ugAnQ8BdUnMwPEC0 _Xtntc2N2_AY67dJhuUG SsLSZQr9VmMR3POJWUmS VxFW1ClEpXlvUUVJkYvt z2kNVEq9LYXEaTHili51 Df2GJckjMJ6cAkEJ869v BLC17X9ew6_l9orKozkG _W7klWEm2z0tEER3UUix uK1AbKa5fIykTo6CO7YT">Follow</button>
                             </div>
                         </li>
-                        <li class="_Xb_LessUL6KItlVbtOZ I48kjgygTcKBfy1Ned2k _pTQrluPoVrrBO5zHbWj">
-                            <div class="_hvyBeXYc1FPGy0YmCOZ COLXryk4dLcCS3dLmD6b">
-                                <img class="l7V51rjvj6mC0O4FhkRh __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos">
-                            </div>
-                            <div class="_hvyBeXYc1FPGy0YmCOZ">
-                                <span class="v1DOVLwZv5vE5pLd2zoq _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">Jese Leos</span>
-                                <span class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv">Enginner at Alphabet Inc.</span>
-                            </div>
-                            <div>
-                                <button type="button" class="faFDFwsII0NnJXopj8aI NGsrL3l2kxSHBbTfI3XZ sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn j5w_LN24FuYb6WiMGvul N_7GgK_MqJ2z0ja0ZrpY cPDkaXEB7uAZEDCL6Z16 tw8OcvA4go4h73YpX7X8 jPovGh08547knX9s4FqY MUruTVQ0LJ0ADcZ_3oEU _jU4BaOKl5BCND0u0lfU yH36ugAnQ8BdUnMwPEC0 _Xtntc2N2_AY67dJhuUG SsLSZQr9VmMR3POJWUmS VxFW1ClEpXlvUUVJkYvt z2kNVEq9LYXEaTHili51 Df2GJckjMJ6cAkEJ869v BLC17X9ew6_l9orKozkG _W7klWEm2z0tEER3UUix uK1AbKa5fIykTo6CO7YT">Follow</button>
-                            </div>
-                        </li>
-                        <li class="_Xb_LessUL6KItlVbtOZ I48kjgygTcKBfy1Ned2k _pTQrluPoVrrBO5zHbWj">
-                            <div class="_hvyBeXYc1FPGy0YmCOZ COLXryk4dLcCS3dLmD6b">
-                                <img class="l7V51rjvj6mC0O4FhkRh __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="Paul Livingston">
-                            </div>
-                            <div class="_hvyBeXYc1FPGy0YmCOZ">
-                                <span class="v1DOVLwZv5vE5pLd2zoq _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">Paul Livingston</span>
-                                <span class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv">Figma designer at Adobe Inc.</span>
-                            </div>
-                            <div>
-                                <button type="button" class="faFDFwsII0NnJXopj8aI NGsrL3l2kxSHBbTfI3XZ sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn j5w_LN24FuYb6WiMGvul N_7GgK_MqJ2z0ja0ZrpY cPDkaXEB7uAZEDCL6Z16 tw8OcvA4go4h73YpX7X8 jPovGh08547knX9s4FqY MUruTVQ0LJ0ADcZ_3oEU _jU4BaOKl5BCND0u0lfU yH36ugAnQ8BdUnMwPEC0 _Xtntc2N2_AY67dJhuUG SsLSZQr9VmMR3POJWUmS VxFW1ClEpXlvUUVJkYvt z2kNVEq9LYXEaTHili51 Df2GJckjMJ6cAkEJ869v BLC17X9ew6_l9orKozkG _W7klWEm2z0tEER3UUix uK1AbKa5fIykTo6CO7YT">Follow</button>
-                            </div>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
