@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a746777c-38d1-4f54-85a7-d5b498830aad" name="Changes" comment="Work on blog posts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +154,7 @@
       <workItem from="1714196163187" duration="7535000" />
       <workItem from="1714236188342" duration="14569000" />
       <workItem from="1714287307388" duration="26740000" />
-      <workItem from="1714341204889" duration="13131000" />
+      <workItem from="1714341204889" duration="14572000" />
     </task>
     <task id="LOCAL-00001" summary="Work on blog posts">
       <option name="closed" value="true" />
