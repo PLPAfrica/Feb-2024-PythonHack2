@@ -21,7 +21,9 @@ def index(request):
 def post_list(request):
     try:
         posts = BlogPost.objects.all().order_by('-publication_date')
-        return render(request, 'post_list.html', {'posts': posts})
+        #post = get_object_or_404(BlogPost)
+        tags = Tag.objects.all()
+        return render(request, 'post_list.html', {'posts': posts, 'tags': tags})
     except OperationalError as e:
         messages.error(request, 'Database error occurred while fetching the post list. Please try again.')
         return redirect('post_list')

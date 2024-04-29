@@ -112,7 +112,7 @@
 <header>
     <nav id="mainNavbar" data-sticky="true" class="FYJhBVe7LqcLLAMe1ZLt _wwlNxo_fdkfJYKqAJqV tw8OcvA4go4h73YpX7X8 MxkCh1Od7CZVGVGtpahb NhUb7XmrGKXGEYnwyUsF _vYX4e3iy_9sP8mOC6hH LVqg7bHx69xdHlJvpacM cnUpD2T3cZmKFSEdgQ7X XfOd8dB5a5tnNTUofAM4 f_pZKe8QScGX_mEa8hAY BmY6mlvEjKmdHLA5eTxJ km_RWEuqSUho14dOFViz AqJRKTLwhNm212ZygOLQ">
         <div class="_Xb_LessUL6KItlVbtOZ EfHRkCdp5wfxElAwFFJY I48kjgygTcKBfy1Ned2k WhuAYjbSprszuhtqgVk7 rDy78aqYCdlVbn1AYx_Y O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p">
-            <a href="#" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7">
+            <a href="{% url 'index' %}" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7">
                 <svg width="80" height="50" viewBox="0 0 100 100" class="B75KlS0q3LUZKDWET_cF _hvyBeXYc1FPGy0YmCOZ">
                       <circle cx="50" cy="50" r="40" fill="#4285F4"></circle>
                       <path d="M50 30c-7.7 0-14 6.3-14 14s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm0 24c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#FFF"></path>
@@ -154,7 +154,7 @@
 
               {% if user.is_authenticated %}
               <li>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+                <a href="{% url 'index' %}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
               </li>
               <li>
                 <a href="{% url 'profile' %}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
@@ -177,7 +177,7 @@
             <div class="DXlAhON9HabjpikY0rWQ I48kjgygTcKBfy1Ned2k WhuAYjbSprszuhtqgVk7 _vYX4e3iy_9sP8mOC6hH CvX5A16NMDSDcLe4HLIZ LEh4kArk_2cftN6B2eHX HP5_nop_fWoE0qglPFwe j5w_LN24FuYb6WiMGvul z2kNVEq9LYXEaTHili51 _GwIUgMjiIAIV41BO1BK hepJeZp1tj4vrl0oexW0 p0VAQHK07IsfUfdiKKhJ yKypayEIBVhHWU6T7onf" id="mobile-menu-2">
                 <ul class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY N_7GgK_MqJ2z0ja0ZrpY _rCvSXeCKULutG6NOkCY Vrj0lDEscnGvhs_q3TcF ISA8BEpGCncLzEkoKoOV">
                     <li>
-                        <a href="#" class="v1DOVLwZv5vE5pLd2zoq faFDFwsII0NnJXopj8aI TsygRW56pJakhOop3oFT SgVGGGauY268teHB5hlM uZtaXRAMNctX50rLdkzn wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp MUruTVQ0LJ0ADcZ_3oEU O7AdhTTKttTbaVPYFmXB nIUvteJ7jb_x_BtYSMYG KtbQw_7J4_KQQ0nv6Tfg T90FfAugylwv0PJGK_0U _5GR6uhgl9vIjB1LEb7b PEqhFj8CKfcm4JbGoaJR uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix ogQtHgTwMPn_R3a5qEUo wtDhnP7iN7ZBczI9vrcc" aria-current="page">Home</a>
+                        <a href="{% url 'index' %}" class="v1DOVLwZv5vE5pLd2zoq faFDFwsII0NnJXopj8aI TsygRW56pJakhOop3oFT SgVGGGauY268teHB5hlM uZtaXRAMNctX50rLdkzn wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp MUruTVQ0LJ0ADcZ_3oEU O7AdhTTKttTbaVPYFmXB nIUvteJ7jb_x_BtYSMYG KtbQw_7J4_KQQ0nv6Tfg T90FfAugylwv0PJGK_0U _5GR6uhgl9vIjB1LEb7b PEqhFj8CKfcm4JbGoaJR uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix ogQtHgTwMPn_R3a5qEUo wtDhnP7iN7ZBczI9vrcc" aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="{% url 'post_list' %}" class="v1DOVLwZv5vE5pLd2zoq faFDFwsII0NnJXopj8aI TsygRW56pJakhOop3oFT SgVGGGauY268teHB5hlM uZtaXRAMNctX50rLdkzn wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp MUruTVQ0LJ0ADcZ_3oEU O7AdhTTKttTbaVPYFmXB nIUvteJ7jb_x_BtYSMYG KtbQw_7J4_KQQ0nv6Tfg T90FfAugylwv0PJGK_0U _5GR6uhgl9vIjB1LEb7b PEqhFj8CKfcm4JbGoaJR uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix ogQtHgTwMPn_R3a5qEUo wtDhnP7iN7ZBczI9vrcc">Blog</a>

@@ -1,5 +1,1052 @@
 {% extends '_base.html' %}
 {% block content %}
+    
+<main class="_vYX4e3iy_9sP8mOC6hH v4j_YSFgrkxzzuj_gab_">
+    
+<section class="ZfgMaxtsBzFu151xg7KP wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp LLklfDv5KODwBpP5ixlG z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc">
+  <div class="O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p lMGGxJGpq_EmDqikc6xq rDy78aqYCdlVbn1AYx_Y NnjUZ5xJwhg9QVw6z6tO c2o4iKAiorg3anKO2ST_ dhHE8KBuCsQILEzSF6KD asiM2r3KKappeL7cJd45 TNKwUFt_JKfd1xHcm8dc">
+    <div class="hfg9kH8_fM5X2MfWq1BA QtTR0zv849zijFvQn5kr kOhzJ5YoQlCRjiHBbWR_ hKQgAAiHupTO_Mh0HHoB OU25kRRwXj4AG7oWnKnZ">
+      {% for post in posts %}
+        <article>
+    <a href="{% url 'post_detail' pk=post.pk %}" title="">
+        <img class="jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH N_7GgK_MqJ2z0ja0ZrpY" src="{{ post.image.url }}" alt="{{ post.title }}">
+    </a>
+
+    <div class="zDMTz821HyZxWe7D7VZD YjFQZPjOXMo3bxrac0IM">
+        <span class="btMDVPb7fsIZMG_yREU1 ynAsZQ4EttMm2Bx3kDk0 HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+            <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            {% for tag in post.tags.all %}
+                <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ tag.name }}</a>
+            {% endfor %}
+        </span>
+
+        <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b gY9luLGG3hnSAHgMh0Aq">
+            <a href="{% url 'post_detail' pk=post.pk %}" title="">
+                {{ post.title }}
+            </a>
+        </h2>
+
+        <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+            <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="{{ post.author.profile_picture.url }}" alt="">
+            <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <div>
+                    {{ post.author }}
+                </div>
+                <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on {{ post.publication_date }}
+                </div>
+            </div>
+        </div>
+
+        <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+            {{ post.content|truncatechars:150 }}
+        </p>
+
+        <a href="{% url 'post_detail' pk=post.pk %}" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+            Read more
+            <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </div>
+        
+</article>
+      {% endfor %}
+
+      <div class="D5OlbSTBw1CfsuazCjIC">
+          
+        <article>
+          <div class="YjFQZPjOXMo3bxrac0IM">
+            <span class="V_Dvj1wp1SQH3qW7mCnq _sT_16nBixc23T8GSnY6 HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS mlKEujPP2_DM2ytQviuC uSx7HMrBMo12Ep5AsPPM">
+              <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" clip-rule="evenodd"></path>
+              </svg>
+              Marketing
+            </span>
+
+            <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b gY9luLGG3hnSAHgMh0Aq">
+              <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                12 SEO best practices that everyone should follow
+              </a>
+            </h2>
+
+            <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+              Static websites are now used to bootstrap lots of websites and are becoming the basis.
+            </p>
+
+            <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+              Read more
+              <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+    
+</section>
+
+<section class="j5w_LN24FuYb6WiMGvul wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp _Xns0Wjl3BLlIPtz2edB mIfTr9Lyk4irJ_mJcLNf">
+  <div class="O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p yO1H0FDiLbTjiZnOogJL rDy78aqYCdlVbn1AYx_Y">
+    <div class="_uf7sOEk1_i7rK4AXRc0">
+      <label for="category" class="ftvY7f2En3GQ06SgSMDx">
+        Select a category
+      </label>
+      <select id="category" class="LLklfDv5KODwBpP5ixlG cPDkaXEB7uAZEDCL6Z16 rm4C7BIv_WgmAADv1313 uZtaXRAMNctX50rLdkzn sNhGMfXh5qpOlS95mw8M N_7GgK_MqJ2z0ja0ZrpY MDbr3hbuH_0KrTqyUoim OuqKmZx8Jv4VMTxjqSjE v1DOVLwZv5vE5pLd2zoq _vYX4e3iy_9sP8mOC6hH Oq5FwunMmjEMud7NEDCO NGvAWlJvxH8ROtNd7cVm BLC17X9ew6_l9orKozkG tBa7elwbLSf2UUEccOsI _5GR6uhgl9vIjB1LEb7b vjCAv7ibj5Sa7Bz57DxI bGkEKPP_vDR9vxtDeJwx">
+        <option>
+          Select a category
+        </option>
+        <option value="" selected="">
+          All categories
+        </option>
+        <option value="">
+          Video
+        </option>
+        <option value="">
+          Interview
+        </option>
+        <option value="">
+          Marketing
+        </option>
+      </select>
+    </div>
+    <div class="DXlAhON9HabjpikY0rWQ LiVf0wl2Sw6G1cph1dO6">
+  <nav class="_Xb_LessUL6KItlVbtOZ EfHRkCdp5wfxElAwFFJY WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+    {% for tag in tags %}
+      <a href="#" title="" class="l60nmbBOLcqmCLlExDag faFDFwsII0NnJXopj8aI uitLxBdIFIR23y_DRJAY _rCvSXeCKULutG6NOkCY cPDkaXEB7uAZEDCL6Z16 Ll9q9VQNfffJO7sdzCuE urabavyCxQuNta7e9flI ffYlsrH6PVCsi_AQQGhu kCYh_9B_DiNr4wTNMwlu Ob9LHhk5_ZZLlGX_E0cX _nWXhHRGtdTKiBdO8_qM _JnISFFHTOHGUcQ9oCk_">
+        {{ tag.name }}
+      </a>
+    {% endfor %}
+  </nav>
+</div>
+
+    
+  </div>
+</section>
+
+<section class="j5w_LN24FuYb6WiMGvul _Xns0Wjl3BLlIPtz2edB">
+  <div class="O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p lMGGxJGpq_EmDqikc6xq rDy78aqYCdlVbn1AYx_Y aKLUSkZJenyuzcf6IOc0">
+    <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY mTf4vXsTioilT_z3roAr OU25kRRwXj4AG7oWnKnZ _6Oprz_DyV1vIZ0CB8ME cTZXmkBf1IFmJb6I0zGB">
+      <div class="BAZxXMCcPgaKer_H2kRt GdwrwpnZNYBNHH1Hdhs_">
+        <div class="wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp mIfTr9Lyk4irJ_mJcLNf">
+          <nav class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 kOhzJ5YoQlCRjiHBbWR_ Oq49fx1SigO9eEJ70fdw gQ0iwtKzo4TzIoLfgH8w">
+            <a href="#" title="" class="uitLxBdIFIR23y_DRJAY _rCvSXeCKULutG6NOkCY wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">
+              Relevant
+            </a>
+
+            <a href="#" title="" class="uitLxBdIFIR23y_DRJAY _rCvSXeCKULutG6NOkCY urabavyCxQuNta7e9flI Ob9LHhk5_ZZLlGX_E0cX">
+              Latest
+            </a>
+
+            <a href="#" title="" class="uitLxBdIFIR23y_DRJAY _rCvSXeCKULutG6NOkCY wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v wzzgYe84MoyXMBIQkKeP _W7klWEm2z0tEER3UUix">
+              Top
+            </a>
+          </nav>
+        </div>
+
+        <div class="KbYVoXvn9YPsgt1d6RZy wFg8XJIzFvH4FwhyE6Z_ zB46ermK8vjBiOJKYX_4">
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-1.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="btMDVPb7fsIZMG_yREU1 ynAsZQ4EttMm2Bx3kDk0 HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Programming
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  How to quickly deploy a static website
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/michael-gough.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Micheal Gough
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 31
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    14 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-2.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="oNjOfZ9emqiyO9ShPw_O _OhXjNWp_nUkQeKyQvZN HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS IjwAIebqnWhxjKFNFA2V XM37FuS2QUIqvEyozORO">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd"></path>
+                </svg>
+                Design
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  Good bot design means never having to say: “I’m sorry, I didn’t get that”
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/thomas-lean.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Thomas Lean
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 31
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    24 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-3.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="ldbWP7YTpNdts28yADcp _WMmNNEiqmOQTK785dXm HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS _eg5r5R7jUKhQpQmlatH ij3fNzoylAeyVcqoBl27">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path>
+                </svg>
+                Productivity
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  What we’re reading: Your recommendations from across Flowbite
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/bonnie-green.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Bonnie Green
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 30
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    92 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-4.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="fqBw02uX4Tmy88aP8qel GNIV_TIZ_q3uUGgZB8WV HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS CcIDUfRPiqsCGzwpRV1B VvS_ZFg6XPAdV0p6Cwuc">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+                </svg>
+                Tutorial
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  How we built Flowbite Design System
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/helene-engels.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Helen Engels
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 30
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    7 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-5.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="V_Dvj1wp1SQH3qW7mCnq _sT_16nBixc23T8GSnY6 HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS mlKEujPP2_DM2ytQviuC uSx7HMrBMo12Ep5AsPPM">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" clip-rule="evenodd"></path>
+                </svg>
+                Marketing
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  12 SEO best practices that everyone should follow in 2023
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/lana-byrd.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Karen Nelson
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 29
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    84 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-6.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="btMDVPb7fsIZMG_yREU1 ynAsZQ4EttMm2Bx3kDk0 HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Programming
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  How to quickly deploy a static website
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/michael-gough.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Micheal Gough
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 29
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    345 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-7.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="vZVDkVUxpt4m6lADHe2I Lok8ZgwlbE1DsturLzUl HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS yp4d3sNl_32UKyj1x_kB SOYpia1Sb_s3GzgY2nn2">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd"></path>
+                </svg>
+                Interview
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  Best React libraries around the web
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/joseph-mcfall.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Joseph McFall
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 27
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    186 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-8.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="LhustiWCzmj3PHd3XOAC tktszwY4nyL14TCwkXmL HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS mKXh_rZjApEMCQniSoKr yis80R_acYmLILsKya1m">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                </svg>
+                UI/UX
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  Simple ways to make online content more accessible (and why it matters)
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/leslie-livingston.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Karen Nelson
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 27
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    64 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-9.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="btMDVPb7fsIZMG_yREU1 ynAsZQ4EttMm2Bx3kDk0 HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Programming
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  How to quickly deploy a static website
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/robert-brown.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Robert Brown
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 27
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    71 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_Xb_LessUL6KItlVbtOZ pIeRaxiBYr4M7rb4DESY _pTQrluPoVrrBO5zHbWj kOhzJ5YoQlCRjiHBbWR_ UFoaFT_ubZI7Auc1WDlb">
+            <div class="c_PkEF0I2lwRWqhjuhLN MdfZuePGpeYa4k2kNR7H YB3RY4vahXcjHt6bccR_ _vYX4e3iy_9sP8mOC6hH Hee9ZjYMi5GY_dQAJS5J bT_INLeSsKhdm19oueBk Lf2V2_DqYRsCqRE6_CR_">
+              <img src="https://flowbite.com/marketing-ui/demo/images/blog/blog-thumbnail-10.png" alt="" class="HI5IirNQN9pY0ckoTi0H _L_9TexbPJAVRIy_OTkW jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH _jdCzS4MAmzed0z3eLRI zrCo8px3V75Hr80zkRra N_7GgK_MqJ2z0ja0ZrpY">
+            </div>
+
+            <div class="YjFQZPjOXMo3bxrac0IM">
+              <span class="oNjOfZ9emqiyO9ShPw_O _OhXjNWp_nUkQeKyQvZN HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS IjwAIebqnWhxjKFNFA2V XM37FuS2QUIqvEyozORO">
+                <svg aria-hidden="true" class="_4_rB6kFBfjIdcEDQ_JJ IoNvYngp_BkR7aKB9X0e mwHsa6aBm1Bld8_fq_ya" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd"></path>
+                </svg>
+                Design
+              </span>
+
+              <h2 class="m_mKfjlZ88T0NgHyO9yH u2gUZHq2Ln1UHr5agIwW _k_QFdAt60o_I4_Fgwql bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                <a href="#" class="gY9luLGG3hnSAHgMh0Aq" title="">
+                  Top 6 design trends to look out for in 2023
+                </a>
+              </h2>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 NTgb2XgZoykp_AZP0xG9">
+                <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="https://flowbite.com/marketing-ui/demo/images/users/lana-byrd.png" alt="">
+                <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <div>
+                    Lana Byrd
+                  </div>
+                  <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                    Posted on Jan 27
+                  </div>
+                </div>
+              </div>
+
+              <p class="uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+                Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
+                tools that even
+                influence both web designers and developers.
+              </p>
+
+              <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 I48kjgygTcKBfy1Ned2k XCSkQavNhVb5LXOEKwIr">
+                <div class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    24 Comments
+                  </button>
+
+                  <button type="button" class="f4f7uCnb9uq5btwF_C_y AnDIho0sioUsWSIFtB_S WhuAYjbSprszuhtqgVk7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v Xira2wcdL7n2fW1XYU7p wzzgYe84MoyXMBIQkKeP">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+
+                <a href="#" title="" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 _k_QFdAt60o_I4_Fgwql urabavyCxQuNta7e9flI gY9luLGG3hnSAHgMh0Aq Ob9LHhk5_ZZLlGX_E0cX">
+                  Read more
+                  <svg aria-hidden="true" class="tsSFtDItokZCqJ_dZrnQ y4pONBZhi44w4FwAX7MQ _vKxEJkC2TiRgg4Z3zFV" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav aria-label="Page navigation example" class="KbYVoXvn9YPsgt1d6RZy zB46ermK8vjBiOJKYX_4">
+          <ul class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 pV5QHq9WvMsCNRvC8qG5 k822ioSonRrCy2JSzOwk">
+            <li>
+              <a href="#" class="v1DOVLwZv5vE5pLd2zoq NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI AjiGj3BWAKAgS4Ic7e9R _k_QFdAt60o_I4_Fgwql wUNCdbXmTwWWuj0aoRKU j5w_LN24FuYb6WiMGvul cPDkaXEB7uAZEDCL6Z16 rm4C7BIv_WgmAADv1313 eVEFDprLg5ps2iU8Sc2B MUruTVQ0LJ0ADcZ_3oEU _HvI8GVfBDRIDPNVSXFI z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc Df2GJckjMJ6cAkEJ869v uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix">
+                <span class="ftvY7f2En3GQ06SgSMDx">Previous</span>
+                <svg aria-hidden="true" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI _k_QFdAt60o_I4_Fgwql wUNCdbXmTwWWuj0aoRKU j5w_LN24FuYb6WiMGvul cPDkaXEB7uAZEDCL6Z16 rm4C7BIv_WgmAADv1313 MUruTVQ0LJ0ADcZ_3oEU _HvI8GVfBDRIDPNVSXFI z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc Df2GJckjMJ6cAkEJ869v uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix">1</a>
+            </li>
+            <li>
+              <a href="#" class="NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI _k_QFdAt60o_I4_Fgwql wUNCdbXmTwWWuj0aoRKU j5w_LN24FuYb6WiMGvul cPDkaXEB7uAZEDCL6Z16 rm4C7BIv_WgmAADv1313 MUruTVQ0LJ0ADcZ_3oEU _HvI8GVfBDRIDPNVSXFI z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc Df2GJckjMJ6cAkEJ869v uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix">2</a>
+            </li>
+            <li>
+              <a href="#" aria-current="page" class="pBZOIAJXjLOKdcjYHkUK NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI _k_QFdAt60o_I4_Fgwql TD30mT_8dhWzfUXDOouA cPDkaXEB7uAZEDCL6Z16 Qfk2JxEsLRJ81Iqat_9p _n1TZcRkaVfjmczgbJdH Gf7_e45KVbdHCuQP8t3N vrFnVTJpZD3GPjXPd_Ve wtDhnP7iN7ZBczI9vrcc NGvAWlJvxH8ROtNd7cVm _5GR6uhgl9vIjB1LEb7b">3</a>
+            </li>
+            <li>
+              <a href="#" class="NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI _k_QFdAt60o_I4_Fgwql wUNCdbXmTwWWuj0aoRKU j5w_LN24FuYb6WiMGvul cPDkaXEB7uAZEDCL6Z16 rm4C7BIv_WgmAADv1313 MUruTVQ0LJ0ADcZ_3oEU _HvI8GVfBDRIDPNVSXFI z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc Df2GJckjMJ6cAkEJ869v uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix">...</a>
+            </li>
+            <li>
+              <a href="#" class="NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI _k_QFdAt60o_I4_Fgwql wUNCdbXmTwWWuj0aoRKU j5w_LN24FuYb6WiMGvul cPDkaXEB7uAZEDCL6Z16 rm4C7BIv_WgmAADv1313 MUruTVQ0LJ0ADcZ_3oEU _HvI8GVfBDRIDPNVSXFI z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc Df2GJckjMJ6cAkEJ869v uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix">100</a>
+            </li>
+            <li>
+              <a href="#" class="v1DOVLwZv5vE5pLd2zoq NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI _k_QFdAt60o_I4_Fgwql wUNCdbXmTwWWuj0aoRKU j5w_LN24FuYb6WiMGvul cPDkaXEB7uAZEDCL6Z16 rm4C7BIv_WgmAADv1313 _XpPXlOdVXI6wh4C_mSy MUruTVQ0LJ0ADcZ_3oEU _HvI8GVfBDRIDPNVSXFI z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc Df2GJckjMJ6cAkEJ869v uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix">
+                <span class="ftvY7f2En3GQ06SgSMDx">Next</span>
+                <svg aria-hidden="true" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="_vYX4e3iy_9sP8mOC6hH _rvq0N10wZyUxcE_qCb9 D5OlbSTBw1CfsuazCjIC COLXryk4dLcCS3dLmD6b SHl7jZixv_IGjKkrkrtq pe7mE_YkVekcciNvajTU">
+        <div class="N_7GgK_MqJ2z0ja0ZrpY LLklfDv5KODwBpP5ixlG z2kNVEq9LYXEaTHili51">
+          <div class="FXL2IxiyL8psa0jP4J8_ _EDQz818Joxm1llwj2uG">
+            <form class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7">
+              <label for="simple-search" class="ftvY7f2En3GQ06SgSMDx">Search</label>
+              <div class="c_PkEF0I2lwRWqhjuhLN _vYX4e3iy_9sP8mOC6hH">
+                <div class="HI5IirNQN9pY0ckoTi0H XiwxMAxnQJrDn0N_OxS3 sDMuoVgAl83ycTYO9Z_B _Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 SgVGGGauY268teHB5hlM _CMueHfZReuiiLYSvywP">
+                  <svg aria-hidden="true" class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <input type="text" id="simple-search" class="j5w_LN24FuYb6WiMGvul cPDkaXEB7uAZEDCL6Z16 rm4C7BIv_WgmAADv1313 uZtaXRAMNctX50rLdkzn sNhGMfXh5qpOlS95mw8M N_7GgK_MqJ2z0ja0ZrpY MDbr3hbuH_0KrTqyUoim OuqKmZx8Jv4VMTxjqSjE v1DOVLwZv5vE5pLd2zoq _vYX4e3iy_9sP8mOC6hH eQdn85kLyeX1TnRYDtJ4 Oq5FwunMmjEMud7NEDCO NGvAWlJvxH8ROtNd7cVm BLC17X9ew6_l9orKozkG tBa7elwbLSf2UUEccOsI _5GR6uhgl9vIjB1LEb7b vjCAv7ibj5Sa7Bz57DxI bGkEKPP_vDR9vxtDeJwx" placeholder="Search" required="">
+              </div>
+            </form>
+
+            <h5 class="sNhGMfXh5qpOlS95mw8M u2gUZHq2Ln1UHr5agIwW TBvpJeC8xgznq42SUoS0 uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">
+              Recommended topics
+            </h5>
+            <div class="_Xb_LessUL6KItlVbtOZ EfHRkCdp5wfxElAwFFJY WhuAYjbSprszuhtqgVk7 aIiBrC07XJYD_NucRW9v">
+              <span class="NGsrL3l2kxSHBbTfI3XZ EuaqO2ti5QYwemUSvuAc sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY ynAsZQ4EttMm2Bx3kDk0 btMDVPb7fsIZMG_yREU1 _VgUfYRJjYVRaXm0RbTr f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                Technology
+              </span>
+
+              <span class="NGsrL3l2kxSHBbTfI3XZ EuaqO2ti5QYwemUSvuAc sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY ynAsZQ4EttMm2Bx3kDk0 btMDVPb7fsIZMG_yREU1 _VgUfYRJjYVRaXm0RbTr f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                Money
+              </span>
+
+              <span class="NGsrL3l2kxSHBbTfI3XZ EuaqO2ti5QYwemUSvuAc sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY ynAsZQ4EttMm2Bx3kDk0 btMDVPb7fsIZMG_yREU1 _VgUfYRJjYVRaXm0RbTr f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                Art
+              </span>
+
+              <span class="NGsrL3l2kxSHBbTfI3XZ EuaqO2ti5QYwemUSvuAc sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY ynAsZQ4EttMm2Bx3kDk0 btMDVPb7fsIZMG_yREU1 _VgUfYRJjYVRaXm0RbTr f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                Productivity
+              </span>
+
+              <span class="NGsrL3l2kxSHBbTfI3XZ EuaqO2ti5QYwemUSvuAc sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY ynAsZQ4EttMm2Bx3kDk0 btMDVPb7fsIZMG_yREU1 _VgUfYRJjYVRaXm0RbTr f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                Psychology
+              </span>
+
+              <span class="NGsrL3l2kxSHBbTfI3XZ EuaqO2ti5QYwemUSvuAc sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY ynAsZQ4EttMm2Bx3kDk0 btMDVPb7fsIZMG_yREU1 _VgUfYRJjYVRaXm0RbTr f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                Design
+              </span>
+
+              <span class="NGsrL3l2kxSHBbTfI3XZ EuaqO2ti5QYwemUSvuAc sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY ynAsZQ4EttMm2Bx3kDk0 btMDVPb7fsIZMG_yREU1 _VgUfYRJjYVRaXm0RbTr f1rakmFi22UquH03p4_z QbaTihXbnTYuCLFbo6zv">
+                Mindfulness
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="N_7GgK_MqJ2z0ja0ZrpY LLklfDv5KODwBpP5ixlG z2kNVEq9LYXEaTHili51">
+          <div class="FXL2IxiyL8psa0jP4J8_ _EDQz818Joxm1llwj2uG">
+            <h5 class="sNhGMfXh5qpOlS95mw8M u2gUZHq2Ln1UHr5agIwW TBvpJeC8xgznq42SUoS0 uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">
+              Who to follow
+            </h5>
+
+            <ul class="YjFQZPjOXMo3bxrac0IM">
+              <li class="_Xb_LessUL6KItlVbtOZ _pTQrluPoVrrBO5zHbWj bt6QV7UavxWOqZZP_iDF">
+                <img class="jN6QI1D_yxwa5_866Gdx __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z Ll9q9VQNfffJO7sdzCuE COLXryk4dLcCS3dLmD6b" src="https://flowbite.com/marketing-ui/demo/images/users/bonnie-green.png" alt="">
+                <div class="BAZxXMCcPgaKer_H2kRt GdwrwpnZNYBNHH1Hdhs_">
+                  <p class="uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 uZtaXRAMNctX50rLdkzn FFTnCUgks3Dh1rYCqfIj _5GR6uhgl9vIjB1LEb7b">
+                    Bonnie Green
+                  </p>
+                  <p class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU FFTnCUgks3Dh1rYCqfIj Df2GJckjMJ6cAkEJ869v">
+                    Web Designer
+                  </p>
+                </div>
+
+                <button type="button" class="NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY _tbXOh1zELnWQOIiveKh cPDkaXEB7uAZEDCL6Z16 tw8OcvA4go4h73YpX7X8 N_7GgK_MqJ2z0ja0ZrpY MUruTVQ0LJ0ADcZ_3oEU vrFnVTJpZD3GPjXPd_Ve yH36ugAnQ8BdUnMwPEC0 _Xtntc2N2_AY67dJhuUG SsLSZQr9VmMR3POJWUmS VxFW1ClEpXlvUUVJkYvt z2kNVEq9LYXEaTHili51 Df2GJckjMJ6cAkEJ869v BLC17X9ew6_l9orKozkG _W7klWEm2z0tEER3UUix uK1AbKa5fIykTo6CO7YT">
+                  Follow
+                </button>
+              </li>
+
+              <li class="_Xb_LessUL6KItlVbtOZ _pTQrluPoVrrBO5zHbWj bt6QV7UavxWOqZZP_iDF">
+                <img class="jN6QI1D_yxwa5_866Gdx __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z Ll9q9VQNfffJO7sdzCuE COLXryk4dLcCS3dLmD6b" src="https://flowbite.com/marketing-ui/demo/images/users/jese-leos.png" alt="">
+                <div class="BAZxXMCcPgaKer_H2kRt GdwrwpnZNYBNHH1Hdhs_">
+                  <p class="uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 uZtaXRAMNctX50rLdkzn FFTnCUgks3Dh1rYCqfIj _5GR6uhgl9vIjB1LEb7b">
+                    Jese Leos
+                  </p>
+                  <p class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU FFTnCUgks3Dh1rYCqfIj Df2GJckjMJ6cAkEJ869v">
+                    Web Develoeper
+                  </p>
+                </div>
+
+                <button type="button" class="NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY _tbXOh1zELnWQOIiveKh cPDkaXEB7uAZEDCL6Z16 tw8OcvA4go4h73YpX7X8 N_7GgK_MqJ2z0ja0ZrpY MUruTVQ0LJ0ADcZ_3oEU vrFnVTJpZD3GPjXPd_Ve yH36ugAnQ8BdUnMwPEC0 _Xtntc2N2_AY67dJhuUG SsLSZQr9VmMR3POJWUmS VxFW1ClEpXlvUUVJkYvt z2kNVEq9LYXEaTHili51 Df2GJckjMJ6cAkEJ869v BLC17X9ew6_l9orKozkG _W7klWEm2z0tEER3UUix uK1AbKa5fIykTo6CO7YT">
+                  Follow
+                </button>
+              </li>
+
+              <li class="_Xb_LessUL6KItlVbtOZ _pTQrluPoVrrBO5zHbWj bt6QV7UavxWOqZZP_iDF">
+                <img class="jN6QI1D_yxwa5_866Gdx __fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z Ll9q9VQNfffJO7sdzCuE COLXryk4dLcCS3dLmD6b" src="https://flowbite.com/marketing-ui/demo/images/users/thomas-lean.png" alt="">
+                <div class="BAZxXMCcPgaKer_H2kRt GdwrwpnZNYBNHH1Hdhs_">
+                  <p class="uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 uZtaXRAMNctX50rLdkzn FFTnCUgks3Dh1rYCqfIj _5GR6uhgl9vIjB1LEb7b">
+                    Thomas Lean
+                  </p>
+                  <p class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU FFTnCUgks3Dh1rYCqfIj Df2GJckjMJ6cAkEJ869v">
+                    CEO at Flowbite
+                  </p>
+                </div>
+
+                <button type="button" class="NGsrL3l2kxSHBbTfI3XZ faFDFwsII0NnJXopj8aI HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY _tbXOh1zELnWQOIiveKh cPDkaXEB7uAZEDCL6Z16 tw8OcvA4go4h73YpX7X8 N_7GgK_MqJ2z0ja0ZrpY MUruTVQ0LJ0ADcZ_3oEU vrFnVTJpZD3GPjXPd_Ve yH36ugAnQ8BdUnMwPEC0 _Xtntc2N2_AY67dJhuUG SsLSZQr9VmMR3POJWUmS VxFW1ClEpXlvUUVJkYvt z2kNVEq9LYXEaTHili51 Df2GJckjMJ6cAkEJ869v BLC17X9ew6_l9orKozkG _W7klWEm2z0tEER3UUix uK1AbKa5fIykTo6CO7YT">
+                  Follow
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="N_7GgK_MqJ2z0ja0ZrpY LLklfDv5KODwBpP5ixlG z2kNVEq9LYXEaTHili51">
+          <div class="FXL2IxiyL8psa0jP4J8_ _EDQz818Joxm1llwj2uG">
+            <h5 class="sNhGMfXh5qpOlS95mw8M u2gUZHq2Ln1UHr5agIwW TBvpJeC8xgznq42SUoS0 uZtaXRAMNctX50rLdkzn t1bojbv5bN_uycVyi8b9 _5GR6uhgl9vIjB1LEb7b">
+              Follow us
+            </h5>
+
+            <ul class="YjFQZPjOXMo3bxrac0IM">
+              <li>
+                <a href="#" title="" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 bt6QV7UavxWOqZZP_iDF uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 gY9luLGG3hnSAHgMh0Aq uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <svg class="__fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z NugeORj0ftyIG3nbJSuY" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                    </path>
+                  </svg>
+                  Twitter
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 bt6QV7UavxWOqZZP_iDF uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 gY9luLGG3hnSAHgMh0Aq uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <svg class="__fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z KYDqJziw1DxBhaRadVEC" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z">
+                    </path>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 bt6QV7UavxWOqZZP_iDF uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 gY9luLGG3hnSAHgMh0Aq uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <svg class="__fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z _3IUIK5HONZamK0qXuSc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M11.1731 9.79959C11.1731 12.68 8.85817 15.015 6.00267 15.015C3.14717 15.015 0.832031 12.6795 0.832031 9.79959C0.832031 6.91971 3.147 4.58398 6.00267 4.58398C8.85835 4.58398 11.1731 6.91918 11.1731 9.79959Z"></path>
+                    <path d="M16.8453 9.7996C16.8453 12.5109 15.6878 14.7097 14.26 14.7097C12.8321 14.7097 11.6746 12.5109 11.6746 9.7996C11.6746 7.08831 12.832 4.8895 14.2598 4.8895C15.6876 4.8895 16.8453 7.08761 16.8453 9.7996Z"></path>
+                    <path d="M19.1654 9.79959C19.1654 12.2282 18.7583 14.1983 18.2561 14.1983C17.7539 14.1983 17.347 12.2288 17.347 9.79959C17.347 7.37041 17.754 5.40092 18.2561 5.40092C18.7582 5.40092 19.1654 7.37024 19.1654 9.79959Z"></path>
+                  </svg>
+                  Medium
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="" class="_Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 bt6QV7UavxWOqZZP_iDF uitLxBdIFIR23y_DRJAY B0KRAxUWa6o1fcxoCms2 gY9luLGG3hnSAHgMh0Aq uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
+                  <svg class="__fODz6BPjHZiJAunDUW Hic0XmeJRc9LnBlsBw1Z dsz63Xv_wn2oV1O1asWJ" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z">
+                    </path>
+                    <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                    <path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z">
+                    </path>
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <img class="jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH N_7GgK_MqJ2z0ja0ZrpY HfEpsD5IRLSthauRiKWN" src="https://flowbite.com/marketing-ui/demo/images/placeholder-image.png" alt="">
+          <img class="DXlAhON9HabjpikY0rWQ jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH N_7GgK_MqJ2z0ja0ZrpY aAv2T8_zW4kFMo19E3hA" src="https://flowbite.com/marketing-ui/demo/images/placeholder-image-dark.png" alt="">
+          <p class="A_8PkDbwF7DWiOrmsHke uitLxBdIFIR23y_DRJAY gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
+            Students and Teachers, save up to 60% on Adobe Creative Cloud.
+          </p>
+          <a href="#" title="" class="HQUhoOtNB3_hJrFDgyU3 v1DOVLwZv5vE5pLd2zoq GgMSI_pvvpNX2S8_Nzp1 _rCvSXeCKULutG6NOkCY vmvK5ihmjQwvD3u8BR1A t1bojbv5bN_uycVyi8b9 dark:">
+            Ads placeholder
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ZfgMaxtsBzFu151xg7KP wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp LLklfDv5KODwBpP5ixlG z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc">
+  <div class="O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p lMGGxJGpq_EmDqikc6xq rDy78aqYCdlVbn1AYx_Y NnjUZ5xJwhg9QVw6z6tO c2o4iKAiorg3anKO2ST_">
+    <div class="EddwxAV5jzpk8WhiqGQX rDy78aqYCdlVbn1AYx_Y d9KaSaBFKzmTOUJHRwyE">
+      <h2 class="IcxvxSjEPCDi7nF2xYDi _1RpOM3YfJo_R6daPVa3 _j0fUTblFhvw9NbQAdvC bjnT2b_qvjyY8oskmcVZ uZtaXRAMNctX50rLdkzn XWyEHWWk0NqNbS2WDykH _5GR6uhgl9vIjB1LEb7b">Stay in touch
+      </h2>
+      <p class="zWudAxb8SejjUymhCqba rDy78aqYCdlVbn1AYx_Y taisKvlFToKAuWpUMGKi wUNCdbXmTwWWuj0aoRKU hjeWhoIEeGGzZnKQ9NDp Df2GJckjMJ6cAkEJ869v">
+        Stay up to date with the roadmap
+        progress,
+        announcements and
+        exclusive discounts feel free to sign up with your email.
+      </p>
+
+      <form action="#" class="qZPPv75SbOBU0lYFB_oe rDy78aqYCdlVbn1AYx_Y">
+        <div class="WhuAYjbSprszuhtqgVk7 gS7E_Skoj88f14yvKVTu YjFQZPjOXMo3bxrac0IM JLJQRDg9XGWZSMQSTHjk _SFdxz0plHwxlISZ1wx2">
+          <div class="c_PkEF0I2lwRWqhjuhLN _vYX4e3iy_9sP8mOC6hH">
+            <label for="email" class="DXlAhON9HabjpikY0rWQ a2y87NW2EtN3uAJReryb sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY uZtaXRAMNctX50rLdkzn _IDndSMTZg_wtmHK0OF2">Email
+              address</label>
+            <div class="HI5IirNQN9pY0ckoTi0H XiwxMAxnQJrDn0N_OxS3 sDMuoVgAl83ycTYO9Z_B _Xb_LessUL6KItlVbtOZ WhuAYjbSprszuhtqgVk7 SgVGGGauY268teHB5hlM _CMueHfZReuiiLYSvywP">
+              <svg class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7 wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+              </svg>
+            </div>
+            <input class="v1DOVLwZv5vE5pLd2zoq _vYX4e3iy_9sP8mOC6hH OirsFc6WCUBUcSWDIpSn eQdn85kLyeX1TnRYDtJ4 sNhGMfXh5qpOlS95mw8M uZtaXRAMNctX50rLdkzn j5w_LN24FuYb6WiMGvul cPDkaXEB7uAZEDCL6Z16 rm4C7BIv_WgmAADv1313 N_7GgK_MqJ2z0ja0ZrpY U_gqNpab9JfW_7ztptqK P4KZzDqxpu1S4sW0BB_e EkCkIvsvtBZpyRmbx2xz I3gyLmaw7epqsD6sV1h3 NGvAWlJvxH8ROtNd7cVm BLC17X9ew6_l9orKozkG tBa7elwbLSf2UUEccOsI _5GR6uhgl9vIjB1LEb7b UU5EWCt68usBQ7AIh7wQ _kNRqr_S5vVrNJnIMa2D" placeholder="Enter your email" type="email" id="email" required="">
+          </div>
+          <div>
+            <button type="submit" class="_vYX4e3iy_9sP8mOC6hH l60nmbBOLcqmCLlExDag aq4zvEsdUeW8uVv9oGDZ sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY d9KaSaBFKzmTOUJHRwyE mgJAKK9vWtU1PSpDOSy7 cPDkaXEB7uAZEDCL6Z16 N_7GgK_MqJ2z0ja0ZrpY wgwz88CSDlJ_zznppt8E P0sEMSGqLpokPnWnm0_G rzgqxhmaYU2Z2U5RAGvm U_gqNpab9JfW_7ztptqK wkYlUytCoY6nryf9odnK j8PPdjt2Dc923qK0hEwI _Xtntc2N2_AY67dJhuUG _acJDSUGqxRwM7YKVwYR T0I_0kOq_tJmZAdv5_bO _Dsh402wwa0qrgkTUss2 Y_kKmPZQA7_Yqrdhvlsp _kgZpkjnvcrdoNB9M68n">Subscribe</button>
+          </div>
+        </div>
+
+        <div class="sNhGMfXh5qpOlS95mw8M guEgHqpKespbfkdf4vIC wUNCdbXmTwWWuj0aoRKU _IDndSMTZg_wtmHK0OF2">We care about the protection of
+          your data. Read our <a href="#" class="uZtaXRAMNctX50rLdkzn tn_oRf3NXCa9FfP6B1H9 _5GR6uhgl9vIjB1LEb7b _nQ91xCFxZjHu5nHMx_s">Privacy
+            Policy</a>.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+      
+  </main>
+
+
+    <!-- 
 <div class="flex flex-wrap justify-center">
     {% for post in posts %}
     <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4">
@@ -41,4 +1088,5 @@
     </article>
     {% endfor %}
 </div>
+-->
 {% endblock %}
