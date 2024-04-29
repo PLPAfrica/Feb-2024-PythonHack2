@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     "compressor",  # new
     # 'blog',
     'crispy_forms',
-    'crispy_bootstrap4',
+    #'crispy_bootstrap4',
     'tinymce',
 ]
 
