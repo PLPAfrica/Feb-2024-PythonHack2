@@ -2,14 +2,14 @@
 {% block content %}
     
 <main class="_vYX4e3iy_9sP8mOC6hH v4j_YSFgrkxzzuj_gab_">
-    
+
 <section class="ZfgMaxtsBzFu151xg7KP wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp LLklfDv5KODwBpP5ixlG z2kNVEq9LYXEaTHili51 wtDhnP7iN7ZBczI9vrcc">
   <div class="O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p lMGGxJGpq_EmDqikc6xq rDy78aqYCdlVbn1AYx_Y NnjUZ5xJwhg9QVw6z6tO c2o4iKAiorg3anKO2ST_ dhHE8KBuCsQILEzSF6KD asiM2r3KKappeL7cJd45 TNKwUFt_JKfd1xHcm8dc">
     <div class="hfg9kH8_fM5X2MfWq1BA QtTR0zv849zijFvQn5kr kOhzJ5YoQlCRjiHBbWR_ hKQgAAiHupTO_Mh0HHoB OU25kRRwXj4AG7oWnKnZ">
       {% for post in posts %}
         <article>
     <a href="{% url 'post_detail' pk=post.pk %}" title="">
-        <img class="jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH N_7GgK_MqJ2z0ja0ZrpY" src="{{ post.image.url }}" alt="{{ post.title }}">
+        <img class="jN6QI1D_yxwa5_866Gdx _vYX4e3iy_9sP8mOC6hH N_7GgK_MqJ2z0ja0ZrpY w-full h-36 min-h-screen " src="{{ post.image.url }}" alt="{{ post.title }}">
     </a>
 
     <div class="zDMTz821HyZxWe7D7VZD YjFQZPjOXMo3bxrac0IM">
@@ -18,7 +18,7 @@
                 <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
             </svg>
             {% for tag in post.tags.all %}
-                <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ tag.name }}</a>
+                <a href="#" class="relative z-10 rounded-full bg-transparent px-3 py-1.5 font-medium text-white hover:bg-transparent">{{ tag.name }}</a>
             {% endfor %}
         </span>
 
@@ -32,7 +32,7 @@
             <img class="iRklyDRNpZpdiVoBcPdr B75KlS0q3LUZKDWET_cF Ll9q9VQNfffJO7sdzCuE" src="{{ post.author.profile_picture.url }}" alt="">
             <div class="gd36nbySmfQS2ATmd8_d _rCvSXeCKULutG6NOkCY _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn _5GR6uhgl9vIjB1LEb7b">
                 <div>
-                    {{ post.author }}
+                    {{ post.author.user.get_full_name }}
                 </div>
                 <div class="sNhGMfXh5qpOlS95mw8M gfsO8zB9k3WaJy7r0_Zv wUNCdbXmTwWWuj0aoRKU Df2GJckjMJ6cAkEJ869v">
                     Posted on {{ post.publication_date }}
@@ -51,12 +51,12 @@
             </svg>
         </a>
     </div>
-        
+
 </article>
       {% endfor %}
 
       <div class="D5OlbSTBw1CfsuazCjIC">
-          
+
         <article>
           <div class="YjFQZPjOXMo3bxrac0IM">
             <span class="V_Dvj1wp1SQH3qW7mCnq _sT_16nBixc23T8GSnY6 HQUhoOtNB3_hJrFDgyU3 _rCvSXeCKULutG6NOkCY f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 QCDAsM8a_aNCO8baUulX EuaqO2ti5QYwemUSvuAc oSNr8WgSHj8bBT07Z5lS mlKEujPP2_DM2ytQviuC uSx7HMrBMo12Ep5AsPPM">
@@ -87,7 +87,7 @@
       </div>
     </div>
   </div>
-    
+
 </section>
 
 <section class="j5w_LN24FuYb6WiMGvul wz_nwThdIJcQW8Jxm5QM wNuxE2XRwfir3lNSV_cp _Xns0Wjl3BLlIPtz2edB mIfTr9Lyk4irJ_mJcLNf">
@@ -124,7 +124,7 @@
   </nav>
 </div>
 
-    
+
   </div>
 </section>
 

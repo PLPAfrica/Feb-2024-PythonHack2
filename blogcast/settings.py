@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-kb7hzecs(oov1r*#fzq^df3isnd=1hz35&!p!x*+!c5keu!7*!
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '0931-154-159-237-25.ngrok-free.app',
+    '8700-154-159-237-142.ngrok-free.app',
     '127.0.0.1',
     'localhost',
 ]
@@ -36,13 +36,13 @@ ALLOWED_HOSTS = [
 CORS_ORIGIN_ALLOW_ALL = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://0931-154-159-237-25.ngrok-free.app',
+    'https://8700-154-159-237-142.ngrok-free.app',
 ]
 
 # Application definition
 
 INSTALLED_APPS = [
-    #'grappelli',
+    # 'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     "compressor",  # new
     # 'blog',
     'crispy_forms',
-    #'crispy_bootstrap4',
+    # 'crispy_bootstrap4',
     'tinymce',
 ]
 
@@ -157,4 +157,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 TINYMCE_JS_URL = 'https://cdn.tiny.cloud/1/9ebdb096l71bu7lkmyz7o6j7hoym95nn792zzrjifizqshhs/tinymce/7/tinymce.min.js'
 TINYMCE_COMPRESSOR = False
-
