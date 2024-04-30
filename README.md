@@ -10,8 +10,8 @@ Objectives During this bootcamp and hackathon, were to create a weather app usin
 - Understand software testing with pytest
 - Understand Database integration with Python Django
 
-My project in particular uses the Weather API from ```https://www.weatherapi.com``` and also includes a Random Quote Generator API from ```https://type.fit/api/quotes``` to display weather updates and random quotes.
+My project in particular uses the Weather API from ```https://www.weatherapi.com``` and also includes a Random Quote Generator API from ```https://type.fit/api/quotes``` as well as the Unsplash API from ```https://api.unsplash.com/search/photos``` to display weather updates and random quotes.
 
-The Weather API in particular allows end users to input a city of their choice in order to get the relevant updates. It also renders a default city incase the user fails to input a city of their choice.
+The Weather API in particular allows end users to input a city of their choice in order to get the relevant updates. It also renders a default city incase the user fails to input a city of their choice. On the side it uses the Unsplash API to display to the user a random picture of the selected city.
 
 

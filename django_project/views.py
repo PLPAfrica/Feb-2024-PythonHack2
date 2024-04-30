@@ -41,9 +41,21 @@ def main(request: HttpRequest):
 
   quotesAPI = {'quote': quote, 'author': author}
 
-  #Building the context for both the APIs
-  context = {**{'cityContext': cityContext}, **weatherAPI, **quotesAPI}
 
+                #THE UNSPLASH API
+  BASE_URL = 'https://api.unsplash.com/search/photos?'
+  client_id = 'Sxv9jRKP7YRhBpKSkyK8Y4wPbu2wU9_I75lZeawIOYo'
+  url = BASE_URL + 'client_id=' + client_id + '&query=' + CITY
+
+  response = requests.get(url)
+  images = response.json()
+  image_index = random.randint(0, len(images) - 1)
+  image_display = images["results"][image_index]["urls"]["regular"]
+
+  imageAPI = {'image_display': image_display}
+
+  #Building the context for both the APIs
+  context = {**{'cityContext': cityContext}, **weatherAPI, **quotesAPI, **imageAPI}
 
   return render(request, 'templates/index.html', context)
 
