@@ -1,0 +1,98 @@
+{% extends '_base.html' %}
+
+{% block content %}
+    
+    <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 z-50 justify-center items-center sm:px-4 md:px-8 lg:px-32 h-[calc(100%-1rem)] max-h-full ">
+    <!-- Your modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <button type="button" onclick="closeModal()" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="progress-modal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+                </svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+            <div class="p-4 md:p-5">
+                <img class="w-16 h-12 text-gray-400 dark:text-gray-500 mb-4" aria-hidden="true" src="/media/plp_logo.png" alt=""></img>
+
+                <h3 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">PLP Week 10 Hackathon</h3>
+                <p class="text-gray-500 dark:text-gray-400 mb-6">This project was created for the Week 10 PLP Africa Learning Programme Hackathon that took place in April 2024. The project is a work in progress. Thank you for being here!<p>
+                <div class="flex justify-between mb-1 text-gray-500 dark:text-gray-400">
+                    <span class="text-base font-normal">Progress</span>
+                    <span class="text-sm font-semibold text-gray-900 dark:text-white">19 of 35 Tasks</span>
+                </div>
+                <div id="" class="progress-bar w-full bg-primary-dark rounded-full h-2.5 dark:bg-gray-600">
+                    <div class="progress-bar bg-orange-500 h-2.5 rounded-full" style="width: 54%"></div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center mt-6 space-x-4 rtl:space-x-reverse justify-between">
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" href="https://github.com/simlexx-k/Feb-2024-PythonHack2">GitHub</button>
+                    <button data-modal-hide="popup-modal" onclick="closeModal()" type="button" class="py-2.5 px-5 text-sm font-medium text-white focus:outline-none bg-primary-dark rounded-lg border border-gray-200 hover:bg-primary-dark hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-primary-dark">Close</button>
+                </div>
+            </div>
+        </div>
+</div>
+  <section class="j5w_LN24FuYb6WiMGvul _Xns0Wjl3BLlIPtz2edB">
+    <div class="hfg9kH8_fM5X2MfWq1BA O6fABJPMfXjR3JaNKMui eQBRejYHR_MmxAuw7a2p lMGGxJGpq_EmDqikc6xq rDy78aqYCdlVbn1AYx_Y tc16ALqGZhYn6CTJOUVw s_fg61uwLeAgUAm19grO wB8_UujN2EcXvq7HNYrz __wmbWKrTIy9dnCwlUdJ dhHE8KBuCsQILEzSF6KD TNKwUFt_JKfd1xHcm8dc c_PkEF0I2lwRWqhjuhLN">
+        <div class="Y_htRXOq_N6k1PuRWV9k J_vW2Dql89WKpNfePC_h sap0st5OspVv1HQ83z5T">
+            <h1 class="EddwxAV5jzpk8WhiqGQX IcxvxSjEPCDi7nF2xYDi YO_pklqg_gP0eaA76aPb _j0fUTblFhvw9NbQAdvC bjnT2b_qvjyY8oskmcVZ _cax_JULmPjSi_0OjUdJ sXHYhC1Sx6NzVg8kCH3Y Uh_wjk1K_5NdBWz3avm9 _5GR6uhgl9vIjB1LEb7b">BlogCast Multiverse - The Tech Haven</h1>
+            <p class="EddwxAV5jzpk8WhiqGQX taisKvlFToKAuWpUMGKi wUNCdbXmTwWWuj0aoRKU QVIVfWckzgUzVhClDzla hjeWhoIEeGGzZnKQ9NDp zi3essUEMstAtgSZ2Uoc Df2GJckjMJ6cAkEJ869v">Join a growing community of bloggers interested in everything Tech! Get to upskill and carve out a specific niche for your clients.</p>
+            <a href="{% url 'post_list' %}" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 pV5QHq9WvMsCNRvC8qG5 l60nmbBOLcqmCLlExDag aq4zvEsdUeW8uVv9oGDZ _hvyBeXYc1FPGy0YmCOZ uitLxBdIFIR23y_DRJAY _rCvSXeCKULutG6NOkCY d9KaSaBFKzmTOUJHRwyE mgJAKK9vWtU1PSpDOSy7 N_7GgK_MqJ2z0ja0ZrpY P0sEMSGqLpokPnWnm0_G j8PPdjt2Dc923qK0hEwI _Xtntc2N2_AY67dJhuUG _acJDSUGqxRwM7YKVwYR nzQrZKgjXz5YrMkDP3ph T0I_0kOq_tJmZAdv5_bO _Dsh402wwa0qrgkTUss2">
+                Explore Posts
+                <svg class="a1WftenjstMhEd0ixyBU tT8TOXv5mF6uYm1PZ9i7 _vKxEJkC2TiRgg4Z3zFV i__9ESwitqrrGjfMSuAr" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="{% url 'about' %}" target="_blank" class="f4f7uCnb9uq5btwF_C_y WhuAYjbSprszuhtqgVk7 pV5QHq9WvMsCNRvC8qG5 j5w_LN24FuYb6WiMGvul l60nmbBOLcqmCLlExDag aq4zvEsdUeW8uVv9oGDZ uitLxBdIFIR23y_DRJAY _rCvSXeCKULutG6NOkCY d9KaSaBFKzmTOUJHRwyE uZtaXRAMNctX50rLdkzn cPDkaXEB7uAZEDCL6Z16 tw8OcvA4go4h73YpX7X8 N_7GgK_MqJ2z0ja0ZrpY MUruTVQ0LJ0ADcZ_3oEU _Xtntc2N2_AY67dJhuUG _F8Ds9i7NyNon9Pkme8V _jU4BaOKl5BCND0u0lfU Df2GJckjMJ6cAkEJ869v z2kNVEq9LYXEaTHili51 BLC17X9ew6_l9orKozkG uK1AbKa5fIykTo6CO7YT _W7klWEm2z0tEER3UUix Dl7bdeA3_kYEiCBS7qZp">
+                FAQ
+            </a> 
+        </div>
+        <div class="DXlAhON9HabjpikY0rWQ yKypayEIBVhHWU6T7onf IfUH2swuvKttBbb3ojMC CvX5A16NMDSDcLe4HLIZ">
+            <img src="https://flowbite.com/marketing-ui/demo/images/templates.png" class="HfEpsD5IRLSthauRiKWN _s3Y_a_9LTIFUCXWyubS _iC2moA3M_3HU07AnoAJ _pniEeG2oWZTvGdCI4ge zWudAxb8SejjUymhCqba _vYX4e3iy_9sP8mOC6hH" alt="Tailwind CSS Marketing UI Templates">
+            <img src="https://flowbite.com/marketing-ui/demo/images/templates-dark.png" class="DXlAhON9HabjpikY0rWQ aAv2T8_zW4kFMo19E3hA zWudAxb8SejjUymhCqba _s3Y_a_9LTIFUCXWyubS _iC2moA3M_3HU07AnoAJ _pniEeG2oWZTvGdCI4ge _vYX4e3iy_9sP8mOC6hH" alt="Tailwind CSS Marketing UI Templates Dark Mode">
+        </div>                
+    </div>
+  </section>
+    
+    <!-- CSS for progress animation -->
+<style>
+    .progress-bar {
+        animation: progressAnimation 2s ease-in-out forwards;
+    }
+
+    @keyframes progressAnimation {
+        from {
+            width: 0;
+        }
+        to {
+            width: 54%;
+        }
+    }
+</style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the modal element
+        var modal = document.getElementById('popup-modal');
+
+        // Open the modal when the page is loaded
+        if (modal) {
+            modal.classList.remove('hidden');
+        }
+    });
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById('popup-modal');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
+    }
+</script>
+
+  <section class="j5w_LN24FuYb6WiMGvul _Xns0Wjl3BLlIPtz2edB v4j_YSFgrkxzzuj_gab_ bg-transparent">
+        <div class="WPN66xY1_3zfXGTk41Y6 i79ARPLuMy6Be_esQUZD rDy78aqYCdlVbn1AYx_Y O6fABJPMfXjR3JaNKMui d9KaSaBFKzmTOUJHRwyE c2o4iKAiorg3anKO2ST_">
+            <h2 class="rDy78aqYCdlVbn1AYx_Y taisKvlFToKAuWpUMGKi EddwxAV5jzpk8WhiqGQX m_mKfjlZ88T0NgHyO9yH _j0fUTblFhvw9NbQAdvC _k_QFdAt60o_I4_Fgwql uZtaXRAMNctX50rLdkzn XPx6l0jkTiBh_qAsMb4e _5GR6uhgl9vIjB1LEb7b">Join a growing community of bloggers interested in everything Tech!</h2>
+            <p class="rDy78aqYCdlVbn1AYx_Y _oGw3v7TmMKu5h0Bm3TW EddwxAV5jzpk8WhiqGQX gd36nbySmfQS2ATmd8_d wUNCdbXmTwWWuj0aoRKU zi3essUEMstAtgSZ2Uoc Df2GJckjMJ6cAkEJ869v">Millions of tech blogs publish on BlogCast daily. </p>
+            <a href="{% if user.is_authenticated %}{% url 'post_list' %}{% else %}{% url 'register' %}{% endif %}" class="aq4zvEsdUeW8uVv9oGDZ l60nmbBOLcqmCLlExDag _vYX4e3iy_9sP8mOC6hH sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY mgJAKK9vWtU1PSpDOSy7 P0sEMSGqLpokPnWnm0_G N_7GgK_MqJ2z0ja0ZrpY j8PPdjt2Dc923qK0hEwI _Xtntc2N2_AY67dJhuUG _acJDSUGqxRwM7YKVwYR T0I_0kOq_tJmZAdv5_bO _Dsh402wwa0qrgkTUss2 jPovGh08547knX9s4FqY _kgZpkjnvcrdoNB9M68n">Join Now</a>
+            <a href="{% url 'post_list' %}" class="aq4zvEsdUeW8uVv9oGDZ l60nmbBOLcqmCLlExDag _vYX4e3iy_9sP8mOC6hH sNhGMfXh5qpOlS95mw8M _rCvSXeCKULutG6NOkCY mgJAKK9vWtU1PSpDOSy7 P0sEMSGqLpokPnWnm0_G N_7GgK_MqJ2z0ja0ZrpY j8PPdjt2Dc923qK0hEwI _Xtntc2N2_AY67dJhuUG _acJDSUGqxRwM7YKVwYR T0I_0kOq_tJmZAdv5_bO _Dsh402wwa0qrgkTUss2 jPovGh08547knX9s4FqY _kgZpkjnvcrdoNB9M68n bg-primary-dark">View Posts</a>
+        </div>
+  </section>
+    
+{% endblock %}
