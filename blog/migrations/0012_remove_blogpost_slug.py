@@ -9,9 +9,3 @@ class Migration(migrations.Migration):
         ('blog', '0011_remove_blogpostx_author_remove_blogpostx_tags_and_more'),
     ]
 
-    operations = [
-        migrations.RemoveField(
-            model_name='blogpost',
-            name='slug',
-        ),
-    ]

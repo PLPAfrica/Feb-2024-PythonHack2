@@ -4,18 +4,19 @@ from django.core.exceptions import ValidationError
 from django.forms import ModelForm
 
 from profiles.models import Profile
-from .models import BlogPost, Comment
+from .models import BlogPost, Comment, CommentReply
 from tinymce.widgets import TinyMCE
 from tinymce.models import HTMLField
 
 
 class BlogPostForm(forms.ModelForm):
+    preview = HTMLField()
     content = HTMLField()  # Add parentheses
     author = Profile.user
 
     class Meta:
         model = BlogPost
-        fields = ('title', 'content', 'image', 'tags')
+        fields = ('title', 'preview', 'content', 'image', 'tags')
 
     def save(self, commit=True):
         try:
@@ -33,3 +34,9 @@ class CommentForm(ModelForm):
     class Meta:
         model = Comment
         fields = ['comment_text', ]
+
+
+class CommentReplyForm(ModelForm):
+    class Meta:
+        model = CommentReply
+        fields = ['reply_text', ]

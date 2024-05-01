@@ -21,6 +21,7 @@ def index(request):
 def post_list(request):
     try:
         posts = BlogPost.objects.all().order_by('-publication_date')
+        preview = BlogPost.preview
         #post = get_object_or_404(BlogPost)
         tags = Tag.objects.all()
         return render(request, 'post_list.html', {'posts': posts, 'tags': tags})
@@ -35,7 +36,10 @@ def post_detail(request, pk):
         tags = Tag.objects.all()
         authors = Profile.objects.all()
         users = User.objects.all()
+        comments = post.comments.all()
+        replies = post.replies.all()
         return render(request, 'post_detail.html', {'post': post, 'tags': tags, 'authors': authors,
+                                                    'comments': comments, 'replies': replies,
                                                     'users': users})
     except Http404:
         messages.error(request, 'Post does not exist.')

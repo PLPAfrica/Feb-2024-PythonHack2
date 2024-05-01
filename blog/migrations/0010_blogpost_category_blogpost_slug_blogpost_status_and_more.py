@@ -21,11 +21,6 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='blogpost',
-            name='slug',
-            field=models.CharField(blank=True, max_length=60, unique=True),
-        ),
-        migrations.AddField(
-            model_name='blogpost',
             name='status',
             field=models.CharField(choices=[('D', 'Draft'), ('P', 'Publish')], default='D', max_length=1),
         ),
