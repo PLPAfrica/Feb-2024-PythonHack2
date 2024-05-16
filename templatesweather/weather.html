@@ -1,0 +1,33 @@
+{% load static from staticweather%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% staticweather 'css/weather.css' %}" />
+   <!-- <link rel="stylesheet" href="/static/styles.css" /> -->
+  <title>Document</title>
+</head>
+<body>
+  <h1>MY WEATHER TODAY </h1>
+
+
+  <h1>Today's weather</h1>
+{{result3}}
+
+
+    <!-- <div class="weather-box">
+    <h2>{{result3['name']}}</h2>
+    <p>
+      <span>{{result3['main']['feels_like']}}°F</span>
+      <span>{{result3['weather'][0]['description']}}</span>
+    </p>
+    <hr>
+    <p>Humidity: {{result3['main']['humidity']}}%</p>
+    <p>Wind Speed: {{result3['wind']['speed']}} mph</p>
+  </div> --> 
+ 
+
+</body> 
+</html> 

@@ -1,5 +1,6 @@
 import requests
 from django.shortcuts import render
+from weatherapp.views import weather
 
 def home(request):
   # USING APIS => Example 1
