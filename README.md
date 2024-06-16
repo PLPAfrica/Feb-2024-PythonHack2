@@ -1,7 +1,7 @@
-## Python Bootcamp & Hackathon
-Note: Clone this repo git clone ```https://github.com/PLPAfrica/Feb-2024-PythonHack2.git``` or simply click on ``Fork``
+## Python Bootcamp & Hackathon Project - Tarvone 
+Note: This repo was originally cloned from: ```https://github.com/PLPAfrica/Feb-2024-PythonHack2.git``` 
 
-Objectives During this bootcamp and hackathon, we will create a Blog website and weather app using a Third-party API, we are aiming to:
+Objectives During this bootcamp and hackathon, were to create a weather app using a Third-party API, where the aim was to:
 
 - Understand JSON
 - Understand how to work with Static files in Django
@@ -9,10 +9,9 @@ Objectives During this bootcamp and hackathon, we will create a Blog website and
 - Understand software development & Deployments
 - Understand software testing with pytest
 - Understand Database integration with Python Django
-By the end of the bootcamp/sessions, you will be required to submit a project. Note: Clone this repo, edit to the requirements/instructions assigned by the Instructor
 
-Submit the code for review
+My project in particular uses the Weather API from ```https://www.weatherapi.com``` and also includes a Random Quote Generator API from ```https://type.fit/api/quotes``` as well as the Unsplash API from ```https://api.unsplash.com/search/photos``` to display weather updates and random quotes.
 
-### Note that the Best project will be rewarded with a certificate and some dollars 😊
+The Weather API in particular allows end users to input a city of their choice in order to get the relevant updates. It also renders a default city incase the user fails to input a city of their choice. On the side it uses the Unsplash API to display to the user a random picture of the selected city.
 
-Note that the code will be updated everytime in class
+

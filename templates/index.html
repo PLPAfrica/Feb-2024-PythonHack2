@@ -1,22 +1,62 @@
 {% load static%}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'styles.css' %}" />
-   <!-- <link rel="stylesheet" href="/static/styles.css" /> -->
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello, My name is Evans </h1>
+  <head>
+    <meta name="viewport" width="device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <title>Trial</title>
+  </head>
+  <body>
+    <h1>WEATHER UPDATES, INSPIRATIONAL QUOTES AND GOOD VIBES</h1>
+    <div class="whole-page">
+      <div class="container">
+        <form class="display-boxes">
+          <label for="city">Enter a City of your Choice:</label>
+          <input type="text" id="city" name="city" placeholder="'Nairobi'">
+          <button type="submit">Search</button>
+        </form>
 
-  {{result}}
 
-  <h1>Random Pet</h1>
-{{result2}}
-  <img src={{result2}} alt="random pet" />
-  
-</body>
+                <!-- THE WEATHER API STARTS HERE -->
+        <div class="display-boxes">
+          <p><strong>LOCATION DATA:</strong><br>
+            City: {{cityContext}}<br>
+            Region: {{region}}<br>
+            Country: {{country}}<br>
+            Local Time: {{time}}<br>
+            Latitude: {{longitude}}<br>
+            Longitude: {{latitude}}<br>
+            Timezone: {{timezone}}<br>
+          </p>
+        </div>
+        <div class="display-boxes">
+          <p><strong>WEATHER DATA:</strong><br>
+            Current recorded weather time: {{current_time}}<br>
+            Current temperature: {{temp_degrees}} degrees celcius or {{temp_farenheit}} farenheit<br>
+            Condition: {{weather_description}}<br>
+            Current wind speed: {{wind_speedKPH}}KMH or {{wind_speedMPH}}MPH<br>
+            Humidity: {{humidity}}<br>
+          </p>
+        </div> 
+              <!-- THE WEATHER API ENDS HERE -->
+
+              <!-- THE RANDOM QUOTES API STARTS HERE --> 
+        <div class="display-boxes">
+          <p><strong>The Quote of the Day is:</strong><br>
+            {{quote}}<br>
+            {{author}}
+          </p>
+        </div>
+              <!-- THE RANDOM QUOTES API ENDS HERE -->
+      </div>
+
+           <!-- THE IMAGE API STARTS HERE -->
+      <div class="image-box">
+        <img id="image" src="{{image_display}}" alt="Random Image"/>
+      </div>
+           <!-- THE IMAGE API ENDS HERE -->
+    </div>
+  </body>
 </html>
