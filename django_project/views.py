@@ -1,17 +1,40 @@
-import requests
-from django.shortcuts import render
+# gym/views.py
+from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponse
+from .models import Class, Payment
+import stripe
 
-def home(request):
-  # USING APIS => Example 1
-  response = requests.get('https://api.github.com/events')
-  data = response.json()
-  result = data[0]["repo"]
+def class_list(request):
+    classes = Class.objects.all()
+    return render(request, 'gym/class_list.html', {'classes': classes})
 
-  # Example 2
-  reponse2 = requests.get('https://dog.ceo/api/breeds/image/random')
-  data2 = reponse2.json()
-  result2 = data2["message"]
+def book_class(request, class_id):
+    selected_class = get_object_or_404(Class, pk=class_id)
+    # Here you would handle the booking logic
+    return render(request, 'gym/book_class.html', {'class': selected_class})
 
+def process_payment(request):
+    if request.method == 'POST':
+        # Payment processing logic goes here
+        return HttpResponse('Payment processed')
+    return render(request, 'gym/process_payment.html')
 
-  
-  return render(request, 'templates/index.html', {'result': result, 'result2': result2})
+def process_payment(request):
+    if request.method == 'POST':
+        token = request.POST.get('stripeToken')
+        try:
+            charge = stripe.Charge.create(
+                amount=5000,  # $50.00
+                currency='usd',
+                source=token,
+                description='Gym Class Payment',
+            )
+            Payment.objects.create(
+                user=request.user,
+                amount=50.00,
+                payment_status='Completed',
+            )
+            return HttpResponse('Payment processed')
+        except stripe.error.StripeError:
+            return HttpResponse('Payment failed')
+    return render(request, 'gym/process_payment.html')

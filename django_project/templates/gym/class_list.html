@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Class List</title>
+  </head>
+  <body>
+    <h1>Classes</h1>
+    <ul>
+      {% for class in classes %}
+      <li>
+        {{ class.name }} - <a href="{% url 'book_class' class.id %}">Book</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
