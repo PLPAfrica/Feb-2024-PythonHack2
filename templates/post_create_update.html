@@ -1,0 +1,34 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block extra_head %}
+    <link href="{% static 'src/forms.css' %}" rel="stylesheet" type="text/css">
+    {{ form.media }}
+{% endblock %}
+
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="outer-wrapper">
+        <div id="inner-wrapper">
+            <h3>Create/Edit Post</h3>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <p style="color: red;">{{ e }}</p>
+                {% for field in form %}
+                <div class="field-container">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    {{ field.errors }}
+                </div>
+                {% endfor %}
+
+                <div id="button-container">
+                    <input type="submit" value="SUBMIT" id="submit-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

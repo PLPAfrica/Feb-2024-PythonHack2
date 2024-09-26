@@ -1,0 +1,12 @@
+{% if weather %}
+<div class="weather-info">
+    <h3>Weather in {{ weather.location }}</h3>
+    <p>Temperature: {{ weather.temperature }} °C</p>
+    <p>Conditions: {{ weather.conditions }}</p>
+    <p>Updated at: {{ weather.timestamp|date:"Y-m-d H:i:s" }}</p>
+</div>
+{% else %}
+<div class="weather-info">
+    <p>No weather data available.</p>
+</div>
+{% endif %}
