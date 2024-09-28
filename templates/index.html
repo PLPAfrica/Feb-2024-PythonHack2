@@ -1,22 +1,42 @@
-{% load static%}
+{% load static %}  
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'styles.css' %}" />
-   <!-- <link rel="stylesheet" href="/static/styles.css" /> -->
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <title>Random Dog Image, Guess the Breed, and Breed Information</title>
 </head>
 <body>
-  <h1>Hello, My name is Evans </h1>
+    <div class="container">
+        <h1>Random Dog Image</h1>
+        <img src="{{ random_dog_image }}" alt="Random Dog">
 
-  {{result}}
+        <h2>Guess the Breed</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="user_guess">Enter your guess:</label>
+            <input type="text" id="user_guess" name="user_guess">
+            <button type="submit">Submit</button>
+        </form>
 
-  <h1>Random Pet</h1>
-{{result2}}
-  <img src={{result2}} alt="random pet" />
-  
+        {% if feedback %}
+            <p>{{ feedback }}</p>
+        {% endif %}
+    </div>
+
+    {% if breed_info %}
+    <div class="breed-info-container">
+        <h2>{{ breed_info.name }}</h2>
+        <p><strong>Temperament:</strong> {{ breed_info.temperament }}</p>
+        <p><strong>Size:</strong> {{ breed_info.size }}</p>
+        <p><strong>Lifespan:</strong> {{ breed_info.life_span }}</p>
+
+    </div>
+    {% else %}
+    <div class="breed-info-container">
+        <p>{{ error_message }}</p>
+    </div>
+    {% endif %}
 </body>
 </html>
